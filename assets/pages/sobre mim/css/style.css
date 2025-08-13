@@ -22,6 +22,7 @@ body {
 }
 .header {
     background-color: var(--menu);
+    padding-inline: 16px;
 }
 .nav {
     display: flex;

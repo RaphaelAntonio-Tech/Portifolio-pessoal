@@ -21,6 +21,7 @@ body {
 }
 .header {
     background-color: var(--menu);
+    padding-inline: 16px;
 }
 .nav {
     display: flex;
@@ -204,5 +205,11 @@ footer i {
   .cards {
     flex-direction: column ;
     align-items: center;
+  }
+  .card img {
+    width: 246px;
+  }
+  footer {
+    padding: 100px 10px;
   }
 }

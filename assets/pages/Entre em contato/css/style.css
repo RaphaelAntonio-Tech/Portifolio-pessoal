@@ -21,6 +21,7 @@ body {
 }
 .header {
     background-color: var(--menu);
+    padding-inline: 16px;
 }
 .nav {
     display: flex;
@@ -179,5 +180,8 @@ body {
 }
 .imagem-principal img {
     max-width: 15rem;
+}
+.apresentação a {
+    padding: 15px;
 }
 }
