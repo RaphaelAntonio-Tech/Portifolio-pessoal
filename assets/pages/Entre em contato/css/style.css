@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font);
+}
+
+:root{
+   --menu: #0a1931;
+   --background: #1a3d63;
+   --botoes: #b3cfe5;
+   --titulos: #f6fafd;
+   --secundaria: #4a7fa7; 
+   --font: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+.header {
+    background-color: var(--menu);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1680px;
+    gap: 6rem;
+    margin-inline: auto;
+    color: var(--titulos);
+    padding-block: 10px;
+}
+
+.logo {
+    margin-left: 7%;
+    font-weight: bold;
+}
+.nav-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.nav-list a {
+    padding-block: 10px;
+    text-decoration: none;
+    color: var(--titulos);
+    padding: 5px;
+}
+.nav-list a:hover {
+    background-color: var(--botoes);
+    transition: 1s;
+    color: #0a1931;
+    border-radius: 10px;
+}
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+.hamburger::before,
+.hamburger::after {
+   content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+.imagem-principal img {
+    max-width: 40rem;
+}
+.apresentação {
+    color: var(--titulos);
+    margin-left: 5%;
+}
+.apresentação h1 {
+  margin-left: 2%;
+}
+.informações {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.apresentação a {
+    color: var(--titulos);
+    text-decoration: none;
+    padding: 20px;
+}
+.apresentação p {
+    padding: 20px;
+}
+.apresentação i {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--titulos);
+    color: var(--background);
+}
+@media screen and (max-width: 780px){
+    .hamburger {
+        content: " ";
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background-color: var(--titulos);
+        cursor: pointer;
+        z-index: 10;
+    }
+    .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--menu);
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+
+    }
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+   
+     /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: var(--menu);
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+.conteudo-principal {
+    flex-direction: column;
+}
+.imagem-principal img {
+    max-width: 15rem;
+}
+}
