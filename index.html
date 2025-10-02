@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+    <title>Seja Bem-vindo!!</title>
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <h1 class="logo">Raphael Antônio</h1>
-            <button class="hamburger"></button>
-            <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="assets/pages/sobre mim/index.html">Sobre mim</a></li>
-                <li><a href="assets/pages/sobre mim/index.html">Projetos</a></li>
-                <li><a href="assets/pages/Serviços/index.html">Serviços</a></li>
-                <li><a href="assets/pages/Entre em contato/index.html">Entre em contato</a></li>
-               
-            </ul>
-        </nav>
+<body class="body">
+    <!--menu-->
+      <header class="header">
+      <nav class="nav">
+       <h1>Raphael Antônio</h1>
+        <button class="hamburger"></button>
+        <ul class="nav-list">
+          <button class="modo" onclick="modo()"><i class="fa-solid fa-sun"></i>Claro</button>
+        </ul>
+      </nav>
     </header>
-    <main class="coteudo">
-        <section class="coteudo-principal">
-            <div class="imagem-principal">
-                <img src="assets/image/background.png" alt="imagem principal">
+
+    <!--Seção Hero-->
+    <section class="hero">
+        <div class="esquerda">
+            <p>Olá, Eu me chamo</p>
+            <h1>Raphael Antônio</h1>
+            <span>Desenvolvedor Front-End</span>
+            <div class="pagina-principal">
+                <a href="" title="Página Principal" class="entrarbtn"><i class="fa-solid fa-eye"></i>Saiba mais</a>
             </div>
-            <article class="apresetacao">
-                <h1>Desenvolvedor Front-End</h1>
-                <p>“Aprender a programar é como aprender uma nova linguagem: quanto mais você pratica, mais fluente se torna.”</p>
-                <a href="assets/pages/sobre mim/index.html" class="buttonPrincipal"><i class="fa-solid fa-eye"></i>Saiba mais</a>
-            </article>
-        </section>
-        <script src="js/script.js"></script>
-    </main>
+        </div>
+
+        <div class="direita">
+            <img src="assets/image/foto perfil.png" alt="foto de perfil" class="foto">
+        </div>
+    </section>
+<script  defer src="js/script.js"></script>
 </body>
 </html>
