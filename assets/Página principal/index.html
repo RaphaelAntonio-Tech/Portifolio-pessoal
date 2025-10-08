@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../image/portifolio.ico" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+
+<body class="body">
+    <!-- Cabeçario -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">Raphael Antônio</h1>
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="../pages/sobre mim/index.html">Sobre mim</a></li>
+                <li><a href="../pages/Projetos/index.html">Projetos</a></li>
+                <li><a href="../pages/Serviços/index.html">Serviços</a></li>
+                <li><a href="../pages/Entre em contato/index.html">Entre em contato</a></li>
+                <button class="modo" onclick="modo()"><i class="fa-solid fa-sun"></i>Claro</button>
+            </ul>
+        </nav>
+    </header>
+    <main class="coteudo">
+        <!-- Aréa de apresentação -->
+        <section class="coteudo-principal">
+            <div class="imagem-principal">
+                <img src="../image/foto perfil.png" alt="imagem principal" class="img">
+            </div>
+
+            <article class="apresetacao">
+                <h1 class="txtp">Desenvolvedor Front-End</h1>
+                <p class="paragrafo">“Aprender a programar é como aprender uma nova linguagem: <br><strong>quanto mais
+                        você pratica, mais fluente se torna.</strong>”</p>
+                <a href="../pages/sobre mim/index.html" class="buttonPrincipal"><i class="fa-solid fa-eye"></i> Saiba
+                    mais</a>
+            </article>
+        </section>
+        <!-- Área dos projetos -->
+        <section class="container-projetos">
+            <div class="titulo">
+                <h1>Projetos</h1>
+                <hr>
+            </div>
+            <article class="Projetos">
+                <div class="card-projetos">
+                    <h2 class="card-title">Curiosidade de Tecnologia</h2>
+                    <img src="../image/Curiosidades de tecnologia.png" alt="Curiosidade de tecnologia"
+                        title="Curiosidade de Tecnologia">
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo"> Desenvolvido durante a finalização do <strong>modulo 2 do curso de HTML5, CSS3
+                            do
+                            curso vídeo</strong> teve com objetivo ensinar aos alunos a como funciona a
+                        estrutura de um site e como funciona com objetivo de aprender a como criar um site
+                        simples e prático</p>
+                    <a href="../pages/Projetos/src/Curiosidades de tecnologia/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Criador de Animações com IA</h2>
+                    <img src="../image/Gerador Mágico de IA.png" alt="Gerador Mágico " title="Gerador Mágico com IA">
+
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <div class="skill">
+                            <img src="../image/n8n-color.png" alt="n8n">
+                            <span>n8n</span>
+                        </div>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">Desenvolvido durante um evento promovido pelo Rodolfo Mori <strong>"Programador
+                            do Futuro com IA"</strong> o projeto Criador Mágico de Animações com IA tem como objetivo
+                        acelerar o processo de criação de animações CSS através da automação com <strong>N8N</strong> e
+                        o uso de <strong>Inteligência Artificial</strong>.</p>
+                    <a href="../pages/Projetos/src/Gerador Mágico/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Joalheria Fictícia</h2>
+                    <img src="../image/Joalheria fícticia.png" alt="Joalheria Fícticia" title="Joalheria Fictícia">
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-solid fa-caret-up"></i>Vercel</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">
+                        Larana, Inc. é uma joalheria fictícia que criei em cima de um modelo de site do Canva. Evoluí a
+                        landing Page que <strong>criei para praticar 'background-image'</strong> e transformei o projeto
+                        em um pequeno laboratório de JavaScript e UX: a "Joalheria Fictícia".
+                    </p>
+                    <a href="../pages/Projetos/src/" class="button-card"><i class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Contador Simples</h2>
+                    <img src="../image/Contador Simples.png" alt="Contador Simples" title="Contador Simples">
+
+                    <!-- Tecnologias Utilizadas no projeto -->
+
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-figma"></i>Figma</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">Contador Simples é um mini projeto que desenvolvi em prol de  praticar conceitos fundamentais de <strong>estruturas de repetição</strong> e também a experimentar novas <strong>ferramentas de design</strong>.</p>
+                    <a href="" class="button-card"><i class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Entre Linhas & Cores</h2>
+                    <img src="../image/Galeria de Arte.png" alt="Entre Linhas & Cores" title="Entre Linhas & Cores">
+
+                    <!--Tecnologias Utilizada no projeto -->
+
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo"> É uma galeria de arte fictícia desenvolvida como projeto pessoal, com o
+                        objetivo de unir estética, navegação intuitiva e valorização da arte visual em um ambiente
+                        digital. A galeria foi desenvolvida com <strong>HTML, CSS</strong> e
+                        <strong>JavaScript</strong>, buscando boas práticas de acessibilidade, usabilidade e
+                        performance.
+                    </p>
+                    <a href="" class="button-card"><i class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+
+                <div class="card-projetos">
+                    <h2 class="card-title">Norte-94</h2>
+                    <img src="../image/Norte 94.png" alt="Norte-94" title="Norte-94">
+
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo"> Primeiro projeto que utilizei <strong>JavaScript</strong>, simples e prático. A
+                        ideia principal é cria uma <strong>Landing Page</strong> simples e prática para uma loja de
+                        roupas e calçados femininos online fictícia, visando criar um ambiente visualmente atrativo, que
+                        destacasse cada produto com imagens, descrições e preços, como em um e-commerce real.</p>
+                    <a href="../pages/Projetos/src/Norte-94/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Restaurante Local</h2>
+                    <img src="../image/restaurante local.png" alt="Restaurante Local" title="Restaurante Local">
+
+                    <!-- Tecnologias utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">Landing Page responsiva bem simples apenas utilizando <strong>HTML</strong> e
+                        <strong>CSS</strong>. O projeto foi pensado para criar uma experiência agradável ao visitante,
+                        destacando os principais serviços ou produtos de forma direta e visualmente atraente.
+                    </p>
+                    <a href="../pages/Projetos/src/Restaurante Local/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Área das habilidades -->
+        <section class="container-habilidades">
+            <h1 class="titulo-habilidade">Habilidades</h1>
+            <hr>
+            <article class="habilidades">
+                <h2 class="semi-titulo">Usando agora:</h2>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="card-habilidade"><i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-github"></i>
+                    <p>github</p>
+                </div>
+            </article>
+            <article class="habilidades">
+                <h2 class="semi-titulo">Aprendendo:</h2>
+
+                <div class="card-habilidade">
+                    <i class="fa-solid fa-file-video"></i>
+                    <p>Edição de Vídeo</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-solid fa-pen"></i>
+                    <p>Design</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+            </article>
+
+            <!-- Área dos serviços -->
+
+            <article class="container-serviços">
+                <h1 class="container-h1">O que eu faço</h1>
+                <hr>
+                <div class="card-serviços">
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap"><i class="fa-regular fa-circle-check"></i></div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="../image/estrutura.png" alt="estrutura">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Estrutura bem organizada com HTML</h3>
+                            <p>Crio páginas claras,com títulos, seções e elementos bem definidos.</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap"><i class="fa-regular fa-circle-check"></i></div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="../image/Visual.png" alt="Visual atraente"
+                                title="Visual atraente com CSS">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3> Visual atraente com CSS</h3>
+                            <p>Layouts responsivos, modernos e adaptáveis a diferentes tamanhos de tela. Uso de cores,
+                                tipografias, ícones e imagens que combinem com sua identidade</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="../image/Ajustes.png" alt="Ajustes e manutenção em projetos existentes"
+                                title="Ajustes e manutenção em projetos existentes">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Ajustes e manutenção em projetos existentes</h3>
+                            <p>Elementos interativos como botões funcionais, menus, calculadoras e outras ações simples
+                                no site.</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="../image/criação.png"
+                                alt="Criação de páginas fictícias para portfólio ou estudo"
+                                title="Criação de páginas fictícias para portfólio ou estudo">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Criação de páginas fictícias para portfólio ou estudo</h3>
+                            <p>Sites criativos como restaurantes, cafeterias, galeria de arte, páginas de apresentação,
+                                entre outros.</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="../image/Responsividade.png" alt="Responsividade"
+                                title="Responsividade">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Responsividade</h3>
+                            <p>Sites que funcionam bem tanto no computador quanto no celular</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="../image/Interatividade.png" alt="Interatividade com JavaScript básico"
+                                title="Interatividade com JavaScript básico">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Interatividade com JavaScript básico</h3>
+                            <p>Elementos interativos como botões funcionais, menus, calculadoras e outras ações simples
+                                no site.</p>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <!-- Área dos contato -->
+
+        <footer class="contato">
+            <div class="texto-contato">
+                <h1 class="contato-titulo">Entre em contato</h1>
+                <hr>
+                <p>Tem alguma ideia, projeto ou dúvida?
+                    Será um prazer conversar com você!
+                    Entre em contato comigo para falarmos sobre colaborações, sugestões ou apenas para trocar
+                    experiências.
+                    Vamos construir algo
+                    juntos!</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/rafscode/" target="_blank" title="Instagram" class="rede"><i
+                        class="fa-brands fa-instagram"></i>@RafsCode</a>
+                <a href="https://github.com/RaphaelAntonio-Tech" target="_blank" title="github" class="rede"><i
+                        class="fa-brands fa-github"></i>@Raphael Tech</a>
+                <a href="https://www.linkedin.com/in/raphael-ant%C3%B4nio-desenvolvedorfront-end/" target="_blank"
+                    title="LinkedIn" class="rede"><i class="fa-brands fa-linkedin-in"></i>@Raphael Antônio</a>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </main>
+</body>
+
+</html>
