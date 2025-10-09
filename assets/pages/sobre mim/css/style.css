@@ -3,11 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --menu: #0a1931;
-   --background: #1a3d63;
-   --botoes: #b3cfe5;
-   --titulos: #f6fafd;
-   --secundaria: #4a7fa7; 
+  --menu: #f4f8fb;
+   --background: #0C1D39;
+   --botoes: #4f82a9;
    --font: "Poppins", sans-serif;
 
 }
@@ -17,9 +15,7 @@
     padding: 0px;
     font-family: var(--font);
 }
-body {
-    background-color: var(--background);
-}
+
 .header {
     background-color: var(--menu);
     padding-inline: 16px;
@@ -30,7 +26,7 @@ body {
     max-width: 1680px;
     gap: 6rem;
     margin-inline: auto;
-    color: var(--titulos);
+    color: var(--background);
     padding-block: 10px;
 }
 
@@ -58,7 +54,7 @@ body {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid var(--botoes);
     cursor: pointer;
 }
 .hamburger::before,
@@ -67,20 +63,26 @@ body {
   display: block;
   width: 30px;
   height: 3px;
-  background: #fff;
+  background: var(--botoes);
   margin-top: 5px;
   position: relative;
   transition: 0.3s;
 }
-
+.modo {
+    background-color: var(--menu);
+    color: var(--background);
+    border: none;
+    cursor: pointer;
+}
 .sobre{
     display: flex; /* Coloca texto e imagem lado a lado em telas grandes */
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
+    padding: 128px;
     gap: 40px;
     flex-wrap: wrap; /* Permite que os itens quebrem linha se faltar espaço */
-    color: var(--titulos);
+    color: var(--background);
+    background-color: var(--menu);
 
 }
 /* Texto da esquerda */
@@ -96,7 +98,6 @@ body {
 
 /* Linha abaixo do título */
 .texto hr {
-    border: 1px solid white;
     margin: 10px 0 20px;
 }
 
@@ -110,7 +111,9 @@ body {
     margin-bottom: 20px;
     line-height: 1.5;
 }
-
+.traço {
+    width: 150px;
+}
 .imagem-container {
    flex: 1;
    display: flex;
@@ -119,12 +122,19 @@ body {
 }
 .imagem-container img {
     width: 500px;
+    border-radius: 100%;
+    background-color: var(--menu);
+    border: 1px solid #050505;
+    box-shadow: 0 6px 14px #050505;
 }
 .conteundo2 {
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 500px;
+}
+.inderlane hr{
+    width: 500px;
 }
 .button-container {
     padding: 20px;
@@ -134,15 +144,26 @@ body {
 }
 .button-container a {
     text-decoration: none;
-    background-color: var(--botoes);
-    color: #0a1931;
+    background-color: var(--background);
+    color: var(--menu);
     padding: 20px;
 }
 .button-container a:hover {
-    background-color: var(--secundaria);
-    color: var(--titulos);
+    background-color: var(--botoes);
+    color: var(--menu);
     transition: 0.5s;
 }
+.mobile-version {
+    display: none;
+     justify-content: space-between;
+    align-items: flex-start;
+    padding: 128px;
+    gap: 40px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se faltar espaço */
+    color: var(--background);
+    background-color: var(--menu);
+}
+
 @media  screen and (max-width: 780px) {
     .hamburger {
         content: " ";
@@ -150,7 +171,6 @@ body {
         position: relative;
         width: 30px;
         height: 3px;
-        background-color: var(--titulos);
         cursor: pointer;
         z-index: 10;
     }
@@ -200,7 +220,7 @@ body {
     position: fixed;
     top: 26px;
     right: 16px;
-    border-top-color: var(--menu);
+    border-top-color: transparent;
   }
 
   .nav.active .hamburger::before {
@@ -215,8 +235,6 @@ body {
         flex-direction: column; /* Coloca texto e imagem um abaixo do outro */
         padding: 6px;
         text-align: center;
-    
-        
     }
 
     .texto h1 {
@@ -225,7 +243,8 @@ body {
 
     .texto p {
         font-size: 16px;
-        margin-right: 5px;
+        margin: 50px;
+        text-align: justify;
     }
 
     .imagem {

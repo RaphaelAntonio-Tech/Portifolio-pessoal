@@ -31,6 +31,13 @@ function modo() {
     let containerh1 = document.querySelector('.container-h1')
     let Vercel = document.querySelector('.Vercel')
 
+    let imagemTroca1 = document.querySelector('.imagem-troca1')
+    let imagemTroca2 = document.querySelector('.imagem-troca2')
+    let imagemTroca3 = document.querySelector('.imagem-troca3')
+    let imagemTroca4 = document.querySelector('.imagem-troca4')
+    let imagemTroca5 = document.querySelector('.imagem-troca5')
+    let imagemTroca6 = document.querySelector('.imagem-troca6')
+
     // Contato 
     let contato = document.querySelector('.contato')
     let contatoTitulo = document.querySelector('.contato-titulo')
@@ -85,16 +92,23 @@ function modo() {
 
         if (cardHabilidade) cardHabilidade.forEach(c => c.style.color = '#f4f8fb')
 
-        if (cardHabilidade) cardHabilidade.forEach(c => c.style.background = '#4f82A9')
+        if (cardHabilidade) cardHabilidade.forEach(c => c.style.background = '#1a3d63')
 
         if (semiTituloHabilidade) semiTituloHabilidade.forEach(c => c.style.color = '#f4f8fb')
 
-        if (serviços) serviços.forEach(c => c.style.background = '#4f82a9')
+        if (serviços) serviços.forEach(c => c.style.background = '#1a3d63')
         if (serviços) serviços.forEach(c => c.style.color = '#f4f8fb')
 
         TituloHabilidade.style.color = '#f4f8fb'
 
         containerh1.style.color = '#f4f8fb'
+
+        imagemTroca1.src = 'image/estrutura modo escuro.png'
+        imagemTroca2.src = 'image/Visual modo escuro.png'
+        imagemTroca3.src = 'image/Ajustes modo escuro.png'
+        imagemTroca4.src = 'image/criação modo escuro.png'
+        imagemTroca5.src = 'image/Responsividade modo escuro.png'
+        imagemTroca6.src = 'image/Interatividade modo escuro.png'
 
 
         // Contato
@@ -154,6 +168,13 @@ function modo() {
         if (serviços) serviços.forEach(c => c.style.color = '#0c1d39')
 
         containerh1.style.color = '#0c1d39'
+        
+        imagemTroca1.src = "image/estrutura.png"
+        imagemTroca2.src = "image/Visual.png"
+        imagemTroca3.src = "image/Ajustes.png"
+        imagemTroca4.src = "image/criação.png"
+        imagemTroca5.src = "image/Responsividade.png"
+        imagemTroca6.src = "image/Interatividade.png" 
 
         // Contato
         contato.style.color = '#0c1d39'
