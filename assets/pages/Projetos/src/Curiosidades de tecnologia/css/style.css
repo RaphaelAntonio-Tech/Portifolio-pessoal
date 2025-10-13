@@ -7,28 +7,26 @@
     font-family: var(--font);
 }
 
-:root{
-   --menu: #0a1931;
-   --background: #1a3d63;
-   --botoes: #b3cfe5;
-   --titulos: #f6fafd;
-   --secundaria: #4a7fa7; 
-   --font: "Poppins", sans-serif;
+:root {
+    --menu: #f4f8fb;
+    --background: #0C1D39;
+    --botoes: #4f82a9;
+    --font: "Poppins", sans-serif;
 }
-body {
-    background-color: var(--background);
-}
+
 .header {
     background-color: var(--menu);
     padding-inline: 16px;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1680px;
     gap: 6rem;
     margin-inline: auto;
-    color: var(--titulos);
+    color: var(--background);
     padding-block: 10px;
 }
 
@@ -36,216 +34,351 @@ body {
     margin-left: 7%;
     font-weight: bold;
 }
+
 .nav-list {
     display: flex;
     gap: 50px;
     list-style: none;
 }
+
 .nav-list a {
     padding-block: 10px;
     text-decoration: none;
     color: var(--titulos);
     padding: 5px;
 }
+
 .nav-list a:hover {
     background-color: var(--botoes);
     transition: 1s;
-    color: #0a1931;
+    color: var(--menu);
     border-radius: 10px;
 }
+
 .hamburger {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid var(--botoes);
     cursor: pointer;
 }
+
 .hamburger::before,
 .hamburger::after {
-   content: " ";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #fff;
-  margin-top: 5px;
-  position: relative;
-  transition: 0.3s;
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--botoes);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
-main {
-    background-color: var(--background);
+
+.modo {
+    background-color: var(--menu);
+    color: var(--background);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
 }
-.container{
-    text-align: center;
-  
+
+.modo:hover {
+    background-color: var(--botoes);
+    color: var(--menu);
 }
-.container h1 {
-    color: var(--titulos);
-    margin: 20px;
+
+.titulo {
+    margin: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--background);
+    font-weight: bold;
 }
+
+.titulo h1 {
+    font-size: 40px;
+}
+
 .imagem-container {
     text-align: center;
 }
+
 .imagem-container img {
     max-width: 800px;
 }
-.icons {
+
+.tech {
     display: flex;
     gap: 20px;
     justify-content: center;
-   align-items: center;
-   padding: 20px;
-   
+    align-items: center;
+    padding: 20px;
+
 }
-.skill {
+
+.tecnologias {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: white;
-    font-size: 18px;
+    gap: 2px;
+    background-color: var(--background);
+    color: var(--menu);
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 16px;
 }
-.skill img{
-    height: 20px;
-    width: auto;
+
+.tracinho {
+    margin: 20px 10%;
 }
 
 .coteudo {
     text-align: justify;
     text-indent: 20px;
     margin: 10px 400px;
-    color: var(--titulos);
+    color: var(--background);
 }
-.negrito {
-    color: var(--botoes);
+
+.coteudo p {
+    margin: 15px;
 }
-.destaque {
-    color: var(--botoes);
-    font-weight: bold;
+
+.conteudo-list {
+    line-height: 32px;
 }
+
 .acesso {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     padding: 5px;
 }
+
 .acesso i {
     margin-right: 20px;
 }
+
 .button1 {
-    background-color: var(--botoes);
+    background-color: var(--background);
     margin-right: 50px;
     padding: 20px;
 }
+
 .button1:hover {
-    background-color: var(--secundaria);
-    color: var(--titulos);
+    background-color: var(--botoes);
     transition: 0.5s;
 }
+
 .button2 {
     padding: 20px;
     margin-left: 50px;
-     background-color: var(--botoes);
+    background-color: var(--background);
 }
+
 .button2:hover {
-    background-color: var(--secundaria);
-    color: var(--titulos);
+    background-color: var(--botoes);
     transition: 0.5s;
 }
+
 .acesso a {
     color: var(--menu);
     text-decoration: none;
 }
+
+/* Área dos serviços  */
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 116px;
+    max-width: 86%;
+    margin: auto;
+}
+
+/* Título contato */
+.contato h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.contato hr {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.texto-contato p {
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rede {
+    text-decoration: none;
+    color: var(--background);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rede:hover {
+    background-color: var(--botoes);
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--menu);
+    transition: 1s;
+}
+
 @media screen and (max-width: 780px) {
-     .hamburger {
+    .hamburger {
         content: " ";
         display: block;
         position: relative;
         width: 30px;
         height: 3px;
-        background-color: var(--titulos);
         cursor: pointer;
         z-index: 10;
     }
-    .nav-list {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: var(--menu);
-    clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-out;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0;
 
-    pointer-events: none;
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--menu);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        pointer-events: none;
 
     }
+
     .nav-list a {
         font-size: 24px;
         opacity: 0;
     }
+
     .nav-list li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
+
     .nav-list li:nth-child(2) a {
         transition: 0.5s 0.4s;
     }
+
     .nav-list li:nth-child(3) a {
         transition: 0.5s 0.6s;
     }
-   
-     /* Estilos ativos */
 
-  .nav.active .nav-list {
-    clip-path: circle(1500px at 90% -15%);
-    pointer-events: all;
-  }
+    /* Estilos ativos */
 
-  .nav.active .nav-list a {
-    opacity: 1;
-  }
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
 
-  .nav.active .hamburger {
-    position: fixed;
-    top: 26px;
-    right: 16px;
-    border-top-color: var(--menu);
-  }
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
 
-  .nav.active .hamburger::before {
-    transform: rotate(135deg);
-  }
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
 
-  .nav.active .hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
-   .imagem-container img {
-    max-width: 290px;
-}
-.coteudo {
-    text-align: justify;
-    text-indent: 20px;
-    margin: 10px 50px;
-    color: var(--titulos);
-}
-.acesso {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    font-size: 15px;
-    
-}
-.button1 {
-    margin-right: 0px;
-    padding: 15px;
-}
-.button2 {
-    padding: 15px;
-   margin-left: 0px;
-   margin-top: 15px;
-  
-}
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .imagem-container img {
+        max-width: 290px;
+    }
+
+    .coteudo {
+        text-align: justify;
+        text-indent: 20px;
+        margin: 10px 50px;
+        color: var(--background);
+    }
+
+    .acesso {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        font-size: 15px;
+
+    }
+
+    .button1 {
+        margin-right: 0px;
+        padding: 15px;
+    }
+
+    .button2 {
+        padding: 15px;
+        margin-left: 0px;
+        margin-top: 15px;
+
+    }
+
+    .titulo {
+        flex-direction: column;
+    }
+
+    .titulo p {
+        margin-top: 20px;
+    }
+
+    .conteudo-list {
+        line-height: 1.8;
+        margin: 20px;
+        padding-left: 30px;
+        font-size: 16px;
+    }
+
+    .conteudo-list li {
+        margin-bottom: 8px;
+    }
+
+    /* Área dos serviços  */
+
+    .contato {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contato hr {
+        width: 280px;
+    }
+
+    .texto-contato p {
+        text-align: center;
+    }
+
+    .redes {
+        align-items: center;
+        gap: 50px;
+    }
 }

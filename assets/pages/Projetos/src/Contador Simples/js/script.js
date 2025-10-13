@@ -58,9 +58,10 @@ function modo() {
         DataProjeto.style.transition = '1s'
 
         if (tecnologias) tecnologias.forEach(c => c.style.background = '#4F82A9')
-       
+
         if (tecnologias) tecnologias.forEach(c => c.style.transition = '1s')
 
+        
         conteudo.style.color = '#f4f8fb'
         conteudo.style.transition = '1s'
 
@@ -115,6 +116,7 @@ function modo() {
         if (tecnologias) tecnologias.forEach(c => c.style.background = '#0c1d39')
 
         if (tecnologias) tecnologias.forEach(c => c.style.transition = '1s')
+
 
         conteudo.style.color = '#0c1d39'
         conteudo.style.transition = '1s'

@@ -1,57 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Criador de Animações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Norte-94</title>
+    <link rel="shortcut icon" href="../../../../image/portifolio.ico" type="image/x-icon">
 </head>
-<body>
-      <header class="header">
+
+<body class="body">
+    <header class="header">
         <nav class="nav">
             <h1 class="logo">Raphael Antônio</h1>
             <button class="hamburger"></button>
             <ul class="nav-list">
                 <li><a href="../../index.html">Início</a></li>
-                <li><a href="pages/sobre mim/index.html">Sobre mim</a></li>
-                <li><a href="pages/Projetos/index.html">Projetos</a></li>
+                <li><a href="../../../sobre mim/index.html">Sobre mim</a></li>
+                <li><a href="../../../Projetos/index.html">Projetos</a></li>
                 <li><a href="../../../Serviços/index.html">Serviços</a></li>
                 <li><a href="../../../Entre em contato/index.html">Entre em contato</a></li>
-               
+                <button class="modo" onclick="modo()"><i class="fa-solid fa-sun"></i> Claro</button>
             </ul>
         </nav>
     </header>
     <main>
-         <section class="container-projeto">
-            <h1>Norte-94</h1>
-            <div class="imagem-container">
-                <img src="../../../../image/Norte 94.png" alt="Norte-94">
+        <section class="container">
+            <div class="titulo">
+                <h1 class="tituloH1">Norte-94
+                </h1>
+                <p class="data-Projeto">Abril 2025 - Maio 2025</p>
             </div>
-            <div class="icons">
-                        <div class="skill">
-                            <img src="../../../../image/HTML5.webp" alt="HTML5">
-                             <span>HTML</span>
-                        </div>
-
-                        <div class="skill">
-                            <img src="../../../../image/CSS.webp" alt="css"> 
-                            <span>CSS</span>
-                        </div>
-                        <div class="skill">
-                            <img src="../../../../image/JavaScript.webp" alt="JavaScript">
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="conteudo">
-                        <p> <span class="negrito">"Norte 94"</span> foi meu segundo projeto e meu primeiro projeto utilizando <strong class="negrito">JavaScript</strong>, com o objetivo de criar uma Landing Page simples para uma loja de roupas fictícia. A proposta era criar uma página simples, utilizando <span class="negrito">HTML</span>, <span class="negrito">CSS</span> e <span class="negrito">JavaScript</span> e conceitos básico de responsividade. Esse projeto marcou uma etapa importante na jornada de aprendizado, proporcionando uma experiência prática valiosa e reforçando a base para projetos mais avançados no futuro.
-                    </div>
-                 <div class="acesso">
-                    <a href="https://raphaelantonio-tech.github.io/Norte-92/"  target="_blank"   class="button1"><i class="fa-solid fa-globe"></i> Ver projeto na Web</a>
-                    <a href="https://github.com/RaphaelAntonio-Tech/Norte-92" target="_blank" class="button2"><i class="fa-brands fa-github"></i> Ver projeto no GitHub</a>
+            <div class="imagem-container">
+                <img src="../../../../image/Norte 94.png" alt="Norte-94" title="Norte-94">
+                <div class="tech">
+                    <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                    <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                    <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                    <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
                 </div>
-            </section>
+            </div>
+            <hr class="tracinho">
+            <div class="coteudo">
+                <p>Projeto de <strong>Landing Page</strong> desenvolvido como primeira experiência prática com
+                    <strong>JavaScript</strong>, simulando uma loja fictícia de roupas e calçados femininos. A proposta
+                    foi criar uma interface simples, funcional e responsiva, aplicando conceitos iniciais de
+                    desenvolvimento <strong>Front-End</strong>.
+
+                </p>
+
+                <p><strong>Objetivo:</strong>
+                </p>
+                <ul class="conteudo-list">
+                    <li>Iniciar a prática de <strong>JavaScript</strong> puro em um projeto real.</li>
+                    <li>Desenvolver uma <strong>estrutura clara</strong> e <strong>organizada</strong> para uma página
+                        de e-commerce.</li>
+                    <li>Explorar fundamentos de <strong>HTML, CSS e interatividade com JavaScript.</strong></li>
+                </ul>
+
+                <p><strong>Tecnologias Utilizadas:</strong></p>
+                <ul class="conteudo-list">
+                    <li><strong>HTML5</strong> - Estrutura da página e semântica.</li>
+                    <li><strong>CSS3</strong> - Estilização, responsividade e layout limpo.</li>
+                    <li><strong>JavaScript (Vanilla) </strong> – Funcionalidades interativas sem frameworks.</li>
+                </ul>
+                <p><strong>Destaques do Projeto:</strong></p>
+                <ul class="conteudo-list">
+                    <li><strong>Navegação clara </strong> e intuitiva.</li>
+                    <li><strong>Seções bem definidas</strong> para banners, produtos e informações.</li>
+                    <li><strong>Interações básicas em JavaScript</strong>, incluindo botões, rolagem e exibição dinâmica
+                        de conteúdo.</li>
+                    <li>Aplicação de <strong>boas práticas de layout e estilização semântica</strong>, voltadas para
+                        experiência do usuário.
+                    </li>
+                </ul>
+                <p><strong>Soft Skills Desenvolvidas:</strong></p>
+                <ul class="conteudo-list">
+                    <li><strong>Disciplina</strong> - foco em aplicar fundamentos técnicos com consistência.</li>
+                    <li><strong>Organização</strong> - estruturação clara do layout e código.</li>
+                    <li><strong>Aprendizado contínuo</strong> - primeiras práticas com lógica de programação.</li>
+                    <li><strong>Persistência</strong> - superação de erros e testes de interatividade.</li>
+                    <li><strong>Atenção aos detalhes</strong> – cuidado na navegação e usabilidade do site.
+                    </li>
+                </ul>
+                <p> Este projeto marca o <strong>início da minha jornada prática como desenvolvedor Front-End</strong>, unindo teoria e prática em uma aplicação simples, mas realista, no contexto de e-commerce.</p>
+                <hr>
+                <div class="acesso">
+                    <a href="https://raphaelantonio-tech.github.io/curso-em-video-projeto/androind.html "
+                        target="_blank" class="button1"><i class="fa-solid fa-globe"></i> Ver projeto na Web </a>
+                    <a href="https://github.com/RaphaelAntonio-Tech/curso-em-video-projeto?tab=readme-ov-file"
+                        class="button2" target="_blank"><i class="fa-brands fa-github"></i> Ver projeto no GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <footer class="contato">
+            <div class="texto-contato">
+                <h1 class="contato-titulo">Entre em contato</h1>
+                <hr>
+                <p>Tem alguma ideia, projeto ou dúvida?
+                    Será um prazer conversar com você!
+                    Entre em contato comigo para falarmos sobre colaborações, sugestões ou apenas para trocar
+                    experiências.
+                    Vamos construir algo
+                    juntos!</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/rafscode/" target="_blank" title="Instagram" class="rede"><i
+                        class="fa-brands fa-instagram"></i>@RafsCode</a>
+                <a href="https://github.com/RaphaelAntonio-Tech" target="_blank" title="github" class="rede"><i
+                        class="fa-brands fa-github"></i>@Raphael Tech</a>
+                <a href="https://www.linkedin.com/in/raphael-ant%C3%B4nio-desenvolvedorfront-end/" target="_blank"
+                    title="LinkedIn" class="rede"><i class="fa-brands fa-linkedin-in"></i>@Raphael Antônio</a>
+            </div>
+        </footer>
     </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>

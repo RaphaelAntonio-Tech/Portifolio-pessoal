@@ -1,53 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Criador de Animações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Restaurante Local</title>
+    <link rel="shortcut icon" href="../../../../image/portifolio.ico" type="image/x-icon">
 </head>
-<body>
+
+<body class="body">
     <header class="header">
         <nav class="nav">
             <h1 class="logo">Raphael Antônio</h1>
             <button class="hamburger"></button>
             <ul class="nav-list">
-                <li><a href=".../../../../../../index.html">Início</a></li>
+                <li><a href="../../index.html">Início</a></li>
                 <li><a href="../../../sobre mim/index.html">Sobre mim</a></li>
-                <li><a href="../../index.html">Projetos</a></li>
+                <li><a href="../../../Projetos/index.html">Projetos</a></li>
                 <li><a href="../../../Serviços/index.html">Serviços</a></li>
                 <li><a href="../../../Entre em contato/index.html">Entre em contato</a></li>
-               
+                <button class="modo" onclick="modo()"><i class="fa-solid fa-sun"></i> Claro</button>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="container-projeto">
-            <h1>Restaurante Local</h1>
-            <div class="imagem-container">
-                <img src="../../../../image/restaurante local.png" alt="Restaurante">
+        <section class="container">
+            <div class="titulo">
+                <h1 class="tituloH1">Restaurante-Local</h1>
+                <p class="data-Projeto">Abril 2025 - Maio  2025</p>
             </div>
-            <div class="icons">
-                        <div class="skill">
-                            <img src="../../../../image/HTML5.webp" alt="HTML5">
-                             <span>HTML</span>
-                        </div>
-
-                        <div class="skill">
-                            <img src="../../../../image/CSS.webp" alt="css"> 
-                            <span>CSS</span>
-                        </div>
-                    </div>
-                    <div class="conteudo">
-                        <p> <span class="negrito">“Sabor & Arte” </span>foi meu primeiro projeto desenvolvido com apenas <strong class="negrito">HTML</strong> e <strong class="negrito">CSS</strong>, com o objetivo de consolidar o aprendizado sobre a estrutura de um site para um restaurante local fictício. A proposta era criar uma landing page simples, informativa e funcional, utilizando os conhecimentos  adquiridos ao longo do módulo do curso de HTML e CSS do <span class="negrito">Curso em Vídeo promovido pelo professor "Gustavo Guanabara”</span>.  Durante o desenvolvimento, também foram trabalhadas diversas soft skills, como <span class="negrito">perseverança</span>, <span class="negrito">foco</span>, <span class="negrito">disciplina</span>, <span class="negrito">organização</span> e <span class="negrito">persistência</span>. Esse projeto marcou minha jornada proporcionando a criatividade para futuros projetos práticos.</p>
-                    </div>
-                 <div class="acesso">
-                    <a href="https://raphaelantonio-tech.github.io/Restaurante-Local/estrutura/index.html"  target="_blank"   class="button1"><i class="fa-solid fa-globe"></i>Ver projeto na Web</a>
-                    <a href="https://github.com/RaphaelAntonio-Tech/Restaurante-Local?tab=readme-ov-file" target="_blank" class="button2"><i class="fa-brands fa-github"></i> Ver projeto no GitHub</a>
+            <div class="imagem-container">
+                <img src="../../../../image/restaurante local.png" alt="Restaurante-Local" title="Restaurante-Local">
+                <div class="tech">
+                    <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                    <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                    <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
                 </div>
+            </div>
+            <hr class="tracinho">
+            <div class="coteudo">
+                <p>     “Sabor & Arte” foi meu primeiro projeto desenvolvido com <strong>HTML</strong> e <strong>CSS</strong>, com o objetivo de consolidar conhecimentos fundamentais em <strong>estruturação de páginas web e estilização responsiva</strong>.  Inspirado em um restaurante local fictício, o site foi construído como uma <strong>Landing Page simples, funcional e informativa</strong>, durante o módulo de <strong>HTML e CSS do Curso em Vídeo</strong>, do professor Gustavo Guanabara.
+                </p>
+
+                <p><strong> Objetivo:</strong>
+                </p>
+                <ul class="conteudo-list">
+                    <li>Praticar e consolidar fundamentos de <strong>HTML e CSS</strong>.</li>
+                    <li>Exercitar <strong>versionamento com Git</strong> e <strong>publicação no GitHub Pages.</strong></li>
+                    <li>Desenvolver disciplina, organização e foco durante o processo de aprendizado.</li>
+                </ul>
+
+                <p><strong> Tecnologias Utilizadas:</strong></p>
+                <ul class="conteudo-list">
+                    <li><strong>HTML5</strong> – Estrutura semântica das páginas.</li>
+                    <li><strong>CSS3</strong> – Estilização visual e responsividade básica.</li>
+                    <li><strong>Git & GitHub</strong> – Controle de versão e publicação online.</li>
+                </ul>
+                <p><strong> Destaques do Projeto:</strong></p>
+                <ul class="conteudo-list">
+                    <li> Seção de <strong>apresentação do restaurante </strong>(nome, slogan e identidade visual).</li>
+                    <li><strong>Cardápio ilustrativo</strong> com pratos fictícios.</li>
+                    <li>Estrutura clara, layout limpo e responsividade básica para diferentes telas.</li>
+                </ul>
+                <p>   Soft Skills Desenvolvidas:</p>
+                <ul class="conteudo-list">
+                    <li><strong>Perseverança</strong> – conclusão do primeiro projeto prático mesmo diante de desafios.</li>
+                    <li><strong>Foco</strong> – dedicação ao aprendizado contínuo de HTML e CSS.</li>
+                    <li><strong>Organização</strong> – estruturação clara da página e do repositório.</li>
+                    <li><strong>Disciplina</strong> – prática constante ao longo do curso.</li>
+                    <li><strong>Criatividade</strong> – desenvolvimento de identidade visual fictícia para o restaurante.</li>
+                </ul>
+                <p> Projeto <strong>inicial que marcou o início da minha jornada prática em desenvolvimento Front-End</strong>, unindo fundamentos técnicos a <strong>soft skills</strong> como perseverança, foco e organização, além de simular o ciclo de desenvolvimento e entrega de um site real.</p>
+                <hr>
+                <div class="acesso">
+                    <a href="https://raphaelantonio-tech.github.io/curso-em-video-projeto/androind.html "
+                        target="_blank" class="button1"><i class="fa-solid fa-globe"></i> Ver projeto na Web </a>
+                    <a href="https://github.com/RaphaelAntonio-Tech/curso-em-video-projeto?tab=readme-ov-file"
+                        class="button2" target="_blank"><i class="fa-brands fa-github"></i> Ver projeto no GitHub</a>
+                </div>
+            </div>
         </section>
+
+        <hr>
+        <footer class="contato">
+            <div class="texto-contato">
+                <h1 class="contato-titulo">Entre em contato</h1>
+                <hr>
+                <p>Tem alguma ideia, projeto ou dúvida?
+                    Será um prazer conversar com você!
+                    Entre em contato comigo para falarmos sobre colaborações, sugestões ou apenas para trocar
+                    experiências.
+                    Vamos construir algo
+                    juntos!</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/rafscode/" target="_blank" title="Instagram" class="rede"><i
+                        class="fa-brands fa-instagram"></i>@RafsCode</a>
+                <a href="https://github.com/RaphaelAntonio-Tech" target="_blank" title="github" class="rede"><i
+                        class="fa-brands fa-github"></i>@Raphael Tech</a>
+                <a href="https://www.linkedin.com/in/raphael-ant%C3%B4nio-desenvolvedorfront-end/" target="_blank"
+                    title="LinkedIn" class="rede"><i class="fa-brands fa-linkedin-in"></i>@Raphael Antônio</a>
+            </div>
+        </footer>
     </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>

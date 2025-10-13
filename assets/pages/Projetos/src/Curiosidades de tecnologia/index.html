@@ -1,49 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../../../../image/portifolio.ico" type="image/x-icon">
     <title>Curiosidades de Tecnologia</title>
 </head>
-<body>
+
+<body class="body">
     <header class="header">
         <nav class="nav">
             <h1 class="logo">Raphael Antônio</h1>
             <button class="hamburger"></button>
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="pages/sobre mim/index.html">Sobre mim</a></li>
+                <li><a href="../../../../Página principal/index.html">Início</a></li>
+                <li><a href="../../../sobre mim/index.html">Sobre mim</a></li>
                 <li><a href="../../../Projetos/index.html">Projetos</a></li>
                 <li><a href="../../../Serviços/index.html">Serviços</a></li>
                 <li><a href="../../../Entre em contato/index.html">Entre em contato</a></li>
-               
+                <button class="modo" onclick="modo()"><i class="fa-solid fa-sun"></i> Claro</button>
             </ul>
         </nav>
     </header>
     <main>
         <section class="container">
-           <h1>Curiosidades de tecnologia</h1>
+            <div class="titulo">
+                <h1 class="tituloH1">Curiosidades de tecnologia
+                </h1>
+                <p class="data-Projeto"> Abril 2025</p>
+            </div>
             <div class="imagem-container">
-                <img src="../../../../image/Curiosidades de tecnologia.png" alt="Curiosidades de tecnologias">
-                <div class="icons">
-                    <div class="skill">
-                        <img src="../../../../image/HTML5.webp" alt="HTML5">
-                        <span>HTML</span>
-                    </div>
+                <img src="../../../../image/Curiosidades de tecnologia.png" alt="Curiosidades de tecnologias" title="Curiosidades de tecnologias">
+                <div class="tech">
+                    <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                    <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
                 </div>
             </div>
+            <hr class="tracinho">
             <div class="coteudo">
-                <p>Desenvolvido durante a finalização do modulo 2 do curso de <strong class="negrito">HTML5, CSS3</strong> do Curso Vídeo, com objetivo de consolidar o aprendizado sobre a estrutura de um site e como ele funciona na prática. A proposta era criar uma página simples, informativa e funcional, utilizando HTML, crianção de títulos, parágrafos, listas, links, inserção de imagens, uso de classes IDs, estilização com CSS e organização com CSS e organização semântica com tags como <span class="destaque">header</span>,<span class="destaque">section</span>,<span class="destaque">article</span> e <span class="destaque">footer</span>.</p>
-                <p>Além disso, foram aplicadas noções de responsividade e boas práticas de organização do código. O conteúdo do site foi focado em curiosidades sobre tecnologia, unindo aprendizado técnico com criatividade na apresentação visual. Durante o desenvolvimento, também foram trabalhadas diversas <strong class="negrito">soft skills</strong>, como <span class="destaque">comunicação escrita</span>, <span class="destaque">pensamento lógico</span>, <span class="destaque">foco</span>, <span class="destaque">disciplina</span>, <span class="destaque">autonomia</span>, <span class="destaque">criatividade</span> e <span class="destaque">organização</span>. Esse projeto marcou uma etapa importante na jornada de aprendizado, proporcionando uma experiência prática valiosa e reforçando a base para projetos mais avançados no futuro.</p>
+                <p>Desenvolvido durante a conclusão do <strong>módulo 2</strong> do <strong>curso de HTML5 e CSS3 do
+                        Curso em Vídeo</strong>, este projeto teve como objetivo principal consolidar conhecimentos
+                    fundamentais sobre estruturação web. O foco foi compreender profundamente como funciona a
+                    arquitetura de um site moderno e aplicar esses conceitos de forma prática e eficiente..</p>
+                <p> A proposta central do projeto consistiu em criar uma página web completa, combinando aspectos
+                    informativos com uma interface funcional e atraente. Foram implementadas diversas técnicas de HTML5
+                    incluindo:</p>
+                <ul class="conteudo-list">
+                    <li>Estruturação hierárquica de títulos <strong>(h1-h6)</strong></li>
+                    <li>Organização semântica com <strong>tags</strong> como <strong>header</strong>
+                        ,<strong>section</strong> ,<strong>article</strong> e <strong>footer</strong>.</li>
+                    <li>Implementação de listas ordenadas e <strong>não-ordenadas</strong></li>
+                    <li>Criação de links internos e externos com <strong>âncoras apropriadas</strong></li>
+                    <li>Inserção e otimização de imagens responsivas</li>
+                    <li>Utilização estratégica de classes e <strong>IDs</strong> para seleção<strong> CSS</strong></li>
+                    <li>Aplicação de estilos personalizados via <strong>CSS externo</strong></li>
+                </ul>
+                <p>O conteúdo temático do site, focado em curiosidades tecnológicas, permitiu uma abordagem criativa na
+                    apresentação visual, com gradientes personalizados, tipografia cuidadosamente selecionada e um
+                    esquema de cores harmonioso que valoriza a experiência do usuário.
+                    Durante o processo de desenvolvimento, diversas <strong>soft skills</strong> foram aprimoradas,
+                    incluindo: </p>
+                <ul class="conteudo-list">
+                    <li><strong>Comunicação</strong> escrita clara e concisa</li>
+                    <li><strong>Pensamento lógico</strong> na estruturação do código</li>
+                    <li><strong>Foco</strong> e <strong>disciplina</strong> para concluir cada etapa</li>
+                    <li><strong>Autonomia</strong> na resolução de problemas técnicos</li>
+                    <li><strong>Criatividade</strong> na apresentação visual e organização do conteúdo</li>
+                    <li><strong>Organização</strong> metódica dos arquivos e componentes do projeto</li>
+                </ul>
+                <p> Este projeto representou um marco significativo em minha jornada de aprendizado, proporcionando uma
+                    experiência prática valiosa com desafios reais de desenvolvimento web. Os conhecimentos adquiridos e
+                    consolidados estabeleceram uma base sólida para a construção de projetos mais complexos e
+                    sofisticados no futuro.</p>
+                <hr>
                 <div class="acesso">
-                    <a href="https://raphaelantonio-tech.github.io/curso-em-video-projeto/androind.html" class="button1"><i class="fa-solid fa-globe"></i> Ver projeto na Web </a>
-                    <a href="https://github.com/RaphaelAntonio-Tech/curso-em-video-projeto?tab=readme-ov-file" class="button2"><i class="fa-brands fa-github"></i> Ver projeto no GitHub</a>
+                    <a href="https://raphaelantonio-tech.github.io/curso-em-video-projeto/androind.html " target="_blank"
+                        class="button1"><i class="fa-solid fa-globe"></i> Ver projeto na Web </a>
+                    <a href="https://github.com/RaphaelAntonio-Tech/curso-em-video-projeto?tab=readme-ov-file"
+                        class="button2" target="_blank"><i class="fa-brands fa-github"></i> Ver projeto no GitHub</a>
                 </div>
             </div>
         </section>
+
+        <hr>
+        <footer class="contato">
+            <div class="texto-contato">
+                <h1 class="contato-titulo">Entre em contato</h1>
+                <hr>
+                <p>Tem alguma ideia, projeto ou dúvida?
+                    Será um prazer conversar com você!
+                    Entre em contato comigo para falarmos sobre colaborações, sugestões ou apenas para trocar
+                    experiências.
+                    Vamos construir algo
+                    juntos!</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/rafscode/" target="_blank" title="Instagram" class="rede"><i
+                        class="fa-brands fa-instagram"></i>@RafsCode</a>
+                <a href="https://github.com/RaphaelAntonio-Tech" target="_blank" title="github" class="rede"><i
+                        class="fa-brands fa-github"></i>@Raphael Tech</a>
+                <a href="https://www.linkedin.com/in/raphael-ant%C3%B4nio-desenvolvedorfront-end/" target="_blank"
+                    title="LinkedIn" class="rede"><i class="fa-brands fa-linkedin-in"></i>@Raphael Antônio</a>
+            </div>
+        </footer>
     </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>
