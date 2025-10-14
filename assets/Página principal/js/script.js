@@ -29,8 +29,7 @@ function modo() {
     let cardHabilidade = document.querySelectorAll('.card-habilidade')
     let serviços = document.querySelectorAll('.serviços')
     let containerh1 = document.querySelector('.container-h1')
-    let Vercel = document.querySelector('.Vercel')
-
+   
     let imagemTroca1 = document.querySelector('.imagem-troca1')
     let imagemTroca2 = document.querySelector('.imagem-troca2')
     let imagemTroca3 = document.querySelector('.imagem-troca3')

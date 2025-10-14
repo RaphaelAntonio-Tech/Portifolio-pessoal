@@ -1,73 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="shortcut icon" href="../../image/portifolio.ico" type="image/x-icon">
      <link rel="stylesheet" href="css/style.css">
     <title>Serviços</title>
 </head>
-<body>
+<body class="body">
      <header class="header">
         <nav class="nav">
             <h1 class="logo">Raphael Antônio</h1>
             <button class="hamburger"></button>
             <ul class="nav-list">
-                <li><a href="../../../index.html">Início</a></li>
-                <li><a href="pages/sobre mim/index.html">Sobre mim</a></li>
-                <li><a href="pages/Projetos/index.html">Projetos</a></li>
+                <li><a href="../../Página principal/index.html">Início</a></li>
+                <li><a href="../sobre mim/index.html">Sobre mim</a></li>
+                <li><a href="../Projetos/index.html">Projetos</a></li>
                 <li><a href="index.html">Serviços</a></li>
                 <li><a href="../Entre em contato/index.html">Entre em contato</a></li>
+                <button class="modo" onclick="modo()"><i class="fa-solid fa-sun"></i> Claro</button>
             </ul>
         </nav>
     </header>
     <main>
         <section class="serviços">
-            <h1>O que eu posso fazer por você?</h1>
+            <h1 class="titulo-principal">O que eu posso fazer por você?</h1>
+            <hr class="tracinho">
+            <p class="apresentação">Nesta seção, você encontra os principais serviços que ofereço como desenvolvedora Front-End em início de carreira. Meu foco é criar sites bem estruturados, visualmente agradáveis e funcionais, sempre buscando evoluir minhas habilidades e entregar resultados de qualidade.</p>
            <div class="cards">
-               <div class="card">
-                <img src="../../image/estrutura image.png" alt="estrutura">
-                <h3>Estrutura bem organizada com HTML</h3>
-                <p>Crio páginas claras, com títulos, seções e elementos bem definidos.</p>
+            <article class="card">
+                <div class="serviços-icon">
+                            <div class="icon-wrap"><i class="fa-regular fa-circle-check"></i></div>
+                </div>
+                            <div class="serviços-img">
+                                <img src="image/estrutura.png" alt="Estrutura bem organizada com HTML" title="Estrutura bem organizada com HTML" class="imageTransforme1">
+                            </div>
+                            <hr>
+                            <div class="card-conteudo">
+                                <h3 class="titulos-cards">Estrutura bem organizada com HTML</h3>
+                                <p class="textocard">Desenvolvo páginas com código limpo e organizado, utilizando tags semânticas, títulos hierárquicos e seções bem definidas. Essa prática facilita e leitura, a munutenção e melhora a acessibilidade.</p>
+                                <p class="textocard">Além disso, aplico boas práticas de desenvolvimento desde a estrutura inicial até os ajustes finais, garantindo uma base sólida para o design e o conteúdo.</p>
+                            </div>
+            </article>
+            <article class="card">
+                 <div class="serviços-icon">
+                    <div class="icon-wrap">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                </div>
+                    <div class="serviços-img">
+                        <img src="image/Visual.png" alt="Visual atraente com CSS" title="Visual atraente com CSS"class="imageTransforme2">
+                    </div>
+                    <hr>
+                    <div class="card-conteudo">
+                        <h3 class="titulos-cards">Visual atraente com CSS</h3>
+                        <p class="textocard">Crio layouts modernos e responsivos, adaptíveis a diferentes  tamanhos de tela. Utilizo paletas de cores harmônicas, tipografias legíveis e ícones coerentes com o estilo do site.</p>
+                        <p class="textocard">Também me preocupo em aplicar efeitos sutis e animações suaves que deixam a navegação mais agradável e profissional, sem exageros.</p>
+                    </div>
+            </article>
+            <article class="card">
+                 <div class="serviços-icon">
+                    <div class="icon-wrap">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                </div>
+                    <div class="serviços-img">
+                        <img src="image/Ajustes.png" alt="Ajustes e manutenção em projetos existentes" title="Ajustes e manutenção em projetos existentes" class="imageTransforme3">
+                    </div>
+                    <hr>
+                    <div class="card-conteudo">
+                        <h3 class="titulos-cards">Ajustes e manutenção em projetos existentes</h3>
+                        <p class="textocard">Faço melhorias visuais e estruturais em sites já prontos, corrigindo problemas de layout, estilização e Interatividade</p>
+                        <p class="textocard">Aprimoro códigos antigos, deixo o design mais moderno e organizo a estrutura do projeto, mantendo sempre a identidade original da página.</p>
+                    </div>
+            </article>
+            <article class="card">
+                <div class="serviços-icon">
+                    <div class="icon-wrap">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="serviços-img">
+                    <img src="image/criação.png" alt="Criação de páginas para portfólio e estudo" title="Criação de páginas para portfólio e estudo" class="imageTransforme4">
+                </div>
+                <hr>
+                <div class="card-conteudo">
+                    <h3 class="titulos-cards">Criação de páginas para portfólio e estudo</h3>
+                    <p class="textocard">Desenvolvo páginas criativas para portfólio ou aprendizado, como sites de restaurantes, lojas, cafeterias, páginas de apresentação, portfólios pessoais e galerias de arte.</p>
+                    <p class="textocard">Esses projetos demonstram minha evolução constante, criatividade e domínio das principais linguagens da web (HTML, CSS e JavaScript).</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="serviços-icon">
+                   <div class="icon-wrap">
+                       <i class="fa-regular fa-circle-check"></i>
+                   </div>
                </div>
+                   <div class="serviços-img">
+                       <img src="image/Responsividade.png" alt="Responsividade" title="Responsividade" class="imageTransforme5">
+                   </div>
+                   <hr>
+                   <div class="card-conteudo">
+                       <h3 class="titulos-cards">Responsividade</h3>
+                       <p class="textocard">Garantia total de que o site funcione bem em qualquer dispositivo - computador, tablet ou celular.</p>
+                       <p class="textocard">Utilizo técnicas mobile-first, ajustando elementos, fontes e imagens para diferentes tamanhos da tela, sempre pensando na melhor experiência do usuário.</p>
+                   </div>
+           </article>
+           <article class="card">
+                <div class="serviços-icon">
+                   <div class="icon-wrap">
+                       <i class="fa-regular fa-circle-check"></i>
+                   </div>
+               </div>
+                   <div class="serviços-img">
+                       <img src="image/Interatividade.png" alt="Interatividade com JavaScript básico" title="Interatividade com JavaScript básico" class="imageTransforme6">
+                   </div>
+                   <hr>
+                   <div class="card-conteudo">
+                       <h3 class="titulos-cards">Interatividade com JavaScript básico</h3>
+                       <p class="textocard">Adiciono funcionalidades dinâmicas que tornam o site mais vivo e interessante.</p>
+                       <p class="textocard">Incluo recursos como botões interativos, menus móveis modos claro e escuro, sliders simples, contadores e pequenas animações.</p>
+                       <p class="textocard">Essas interações ajudam a destacar o conteúdo e tornam a navegação mais intuitiva e envolvente.</p>
+                   </div>
+           </article>
 
-               <div class="card">
-                <img src="../../image/Visual img.png" alt="visual">
-                <h3>Visual atraente com CSS</h3>
-                <p>Layouts responsivos, modernos e adaptáveis a diferentes tamanhos de tela.
-               Uso de cores, tipografias, ícones e imagens que combinem com sua identidade</p>
-               </div>
-               
-               <div class="card">
-                <img src="../../image/Ajustes img.png" alt="Ajustes">
-                <h3>Ajustes e manutenção em projetos existentes</h3>
-                <p>Elementos interativos como botões funcionais, menus, calculadoras e outras ações simples no site.</p>
-               </div>
-
-               <div class="card">
-                <img src="../../image/Criação img.png" alt="criação">
-                <h3>Criação de páginas fictícias para portfólio ou estudo</h3>
-                <p>Sites criativos como restaurantes, cafeterias, galeria de arte, páginas de apresentação, entre outros.</p>
-               </div>
-
-              
-               
-               <div class="card">
-                <img src="../../image/Resposividade.png" alt="Resposividade">
-                <h3>Responsividade</h3>
-                <p>Sites que funcionam bem tanto no computador quanto no celular</p>
-               </div>
-
-               <div class="card">
-                <img src="../../image/Interatividade img.png" alt="Interatividade">
-                <h3>Interatividade com JavaScript básico</h3>
-                <p>Elementos interativos como botões funcionais, menus, calculadoras e outras ações simples no site.</p>
-               </div>
-           </div>
         </section>
-        <footer>
-            <h1>Contrate-me</h1>
-            <a href="../Entre em contato/index.html"><i class="fa-solid fa-phone"></i>Entre em contato</a>
+        <!-- Área dos contato -->
+
+        <footer class="contato">
+            <div class="texto-contato">
+                <hr class="traço">
+                <h1 class="contato-titulo">Entre em contato</h1>
+                <hr class="tracin">
+                <p>Tem alguma ideia, projeto ou dúvida?
+                    Será um prazer conversar com você!
+                    Entre em contato comigo para falarmos sobre colaborações, sugestões ou apenas para trocar
+                    experiências.
+                    Vamos construir algo
+                    juntos!</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/rafscode/" target="_blank" title="Instagram" class="rede"><i
+                        class="fa-brands fa-instagram"></i>@RafsCode</a>
+                <a href="https://github.com/RaphaelAntonio-Tech" target="_blank" title="github" class="rede"><i
+                        class="fa-brands fa-github"></i>@Raphael Tech</a>
+                <a href="https://www.linkedin.com/in/raphael-ant%C3%B4nio-desenvolvedorfront-end/" target="_blank"
+                    title="LinkedIn" class="rede"><i class="fa-brands fa-linkedin-in"></i>@Raphael Antônio</a>
+            </div>
         </footer>
         <script src="js/script.js"></script>
     </main>

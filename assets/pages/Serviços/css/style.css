@@ -7,29 +7,26 @@
     font-family: var(--font);
 }
 
-:root{
-   --menu: #0a1931;
-   --background: #1a3d63;
-   --botoes: #b3cfe5;
-   --titulos: #f6fafd;
-   --secundaria: #4a7fa7; 
-   --font: "Poppins", sans-serif;
+:root {
+    --menu: #F4F8FB;
+    --background: #0C1D39;
+    --botoes: #4f82a9;
+    --font: "Poppins", sans-serif;
 }
 
-body {
-    background-color: var(--background);
-}
 .header {
     background-color: var(--menu);
     padding-inline: 16px;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1680px;
     gap: 6rem;
     margin-inline: auto;
-    color: var(--titulos);
+    color: var(--background);
     padding-block: 10px;
 }
 
@@ -37,179 +34,310 @@ body {
     margin-left: 7%;
     font-weight: bold;
 }
+
 .nav-list {
     display: flex;
     gap: 50px;
     list-style: none;
 }
+
 .nav-list a {
     padding-block: 10px;
     text-decoration: none;
     color: var(--titulos);
     padding: 5px;
 }
+
 .nav-list a:hover {
     background-color: var(--botoes);
     transition: 1s;
     color: #0a1931;
     border-radius: 10px;
 }
+
 .hamburger {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid var(--botoes);
     cursor: pointer;
 }
+
 .hamburger::before,
 .hamburger::after {
-   content: " ";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #fff;
-  margin-top: 5px;
-  position: relative;
-  transition: 0.3s;
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--botoes);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
+
+.modo {
+    background-color: var(--menu);
+    color: var(--background);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.modo:hover {
+    background-color: var(--botoes);
+    color: var(--menu);
+}
+
 /* Título */
-.serviços h1 {
-    text-align: center;
+
+
+.titulo-principal {
     font-size: 28px;
     font-weight: bold;
     margin-top: 20px;
-    padding: 30px auto 10px;
-    color: var(--titulos);
+    margin-left: 7%;
+    padding: 30px 10px;
+    color: var(--background);
 }
+
+.tracinho {
+    width: 200px;
+    margin-left: 7%;
+}
+
+.apresentação {
+    margin: 1% 7%;
+
+}
+
 /* Container dos cards*/
 .cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Quebra linha no celular */
-    padding: 0 20px;
+    flex-wrap: wrap;
+    padding: 20px 150px;
 }
+
 /* Cada card */
 .card {
+    display: flex;
+    align-items: flex-start;
+    width: 45%;
+    box-shadow: 0 6px 14px #050505;
     padding: 20px;
-    text-align: center; /* Largura mínima ajustada no espaço disponivel*/
-    flex: 1 1 220px;
-    max-width:  250px;
+    border-radius: 30px;
 }
+
+.serviços-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
 .card img {
-    width: 300px;
-    height: auto;
-    margin-bottom: 15px;
+    width: 115px;
+    padding: 15px;
 }
+
+.card hr {
+    width: 0;
+    height: 150px;
+    margin: 0 20px;
+}
+
 /* Título do card */
 .card h3 {
-   color:  var(--titulos);
-    font-size: 16px;
+    color: var(--background);
     margin-bottom: 10px;
 }
+
 /*Texto do card */
 .card p {
     font-size: 14px;
-    color: var(--titulos);
+    color: var(--background);
 }
-footer {
-   text-align: center;
-   padding: 100px;
+
+/* Área dos serviços  */
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 116px;
+    max-width: 86%;
 }
-footer h1 {
-    color: var(--titulos);
-    margin-bottom: 20px;
+
+/* Título contato */
+.contato h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--background);
 }
-footer a{
-    color: var(--menu);
+
+.tracin {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.traço {
+    width: 285%;
+}
+.texto-contato p {
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rede {
     text-decoration: none;
+    color: var(--background);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.rede:hover {
     background-color: var(--botoes);
-    padding: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--menu);
+    transition: 1s;
 }
-footer a:hover {
-    background-color: var(--secundaria);
-    color: var(--titulos);
-    transition: 0.5s;
-}
-footer i {
-    margin-right: 10px;
-}
-@media screen and (max-width: 780px){
+
+@media screen and (max-width: 780px) {
     .hamburger {
         content: " ";
         display: block;
         position: relative;
         width: 30px;
         height: 3px;
-        background-color: var(--titulos);
         cursor: pointer;
         z-index: 10;
     }
-    .nav-list {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: var(--menu);
-    clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-out;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0;
 
-    pointer-events: none;
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--menu);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        pointer-events: none;
 
     }
+
     .nav-list a {
         font-size: 24px;
         opacity: 0;
     }
+
     .nav-list li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
+
     .nav-list li:nth-child(2) a {
         transition: 0.5s 0.4s;
     }
+
     .nav-list li:nth-child(3) a {
         transition: 0.5s 0.6s;
     }
-   
-     /* Estilos ativos */
 
-  .nav.active .nav-list {
-    clip-path: circle(1500px at 90% -15%);
-    pointer-events: all;
-  }
+    /* Estilos ativos */
 
-  .nav.active .nav-list a {
-    opacity: 1;
-  }
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
 
-  .nav.active .hamburger {
-    position: fixed;
-    top: 26px;
-    right: 16px;
-    border-top-color: var(--menu);
-  }
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
 
-  .nav.active .hamburger::before {
-    transform: rotate(135deg);
-  }
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
 
-  .nav.active .hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
-  .cards {
-    flex-direction: column ;
-    align-items: center;
-  }
-  .card img {
-    width: 246px;
-  }
-  footer {
-    padding: 100px 10px;
-  }
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        padding: 30px 41px;
+    }
+
+    .card .serviços-icon {
+        align-items: flex-start;
+    }
+
+    .card {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    .card hr {
+        width: 200px;
+        height: 0;
+        margin: 20px;
+    }
+
+    /* Área dos serviços  */
+
+    .contato {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contato hr {
+        width: 280px;
+    }
+
+    .texto-contato p {
+        text-align: center;
+    }
+
+    .redes {
+        align-items: center;
+        gap: 50px;
+    }
 }
