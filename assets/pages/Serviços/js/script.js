@@ -101,7 +101,7 @@ function modo() {
         ContatoTitulo.style.color = '#f4f8fb'
         ContatoTitulo.style.transition = '1s'
 
-        redes.style.background = '#0c1d39'
+
         redes.style.color = '#f4f8fb'
         redes.style.transition = '1s'
 
@@ -161,7 +161,7 @@ function modo() {
         ContatoTitulo.style.color = '#0c1d39'
         ContatoTitulo.style.trasition = '1s'
 
-        redes.style.background = '#f4f8fb'
+     
         redes.style.color = '#0c1d39'
         redes.style.transition = '1s'
 

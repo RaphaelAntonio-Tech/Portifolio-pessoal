@@ -5,7 +5,7 @@
     --menu: #F4F8FB;
     --background: #0C1D39;
     --botoes: #4f82a9;
-    --card-projeto: #99A0A5;
+    --card-projeto: #81818185;
     --font: "Poppins", sans-serif;
 }
 
@@ -372,11 +372,13 @@ main {
     color: var(--background);
 }
 
-.contato hr {
+.tracin {
     width: 100px;
     margin-bottom: 10px;
 }
-
+.traço {
+    width: 285%;
+}
 .texto-contato p {
     line-height: 1.6;
     max-width: 600px;
@@ -395,6 +397,7 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-top: 10px;
 }
 
 .rede:hover {
@@ -404,7 +407,6 @@ main {
     color: var(--menu);
     transition: 1s;
 }
-
 @media screen and (max-width: 900px) {
 
     /* Cabeçario */

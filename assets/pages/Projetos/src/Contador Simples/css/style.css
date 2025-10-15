@@ -129,23 +129,6 @@
     font-size: 16px;
 }
 
-.skill {
-    display: flex;
-    background-color: var(--background);
-    align-items: center;
-    gap: 8px;
-    margin: 10px;
-    padding: 5px;
-    background-color: var(--background);
-    color: var(--menu);
-    border-radius: 30px;
-    font-size: 15px;
-}
-
-.skill img {
-    height: 20px;
-    width: auto;
-}
 
 .tracinho {
     margin: 20px 10%;
