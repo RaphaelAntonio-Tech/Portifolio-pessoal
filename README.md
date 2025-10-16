@@ -10,6 +10,13 @@ Este é o meu **portfólio pessoal**, desenvolvido de forma simples, prática e 
 - **Página de Serviços**, com informações sobre oque posso oferecer.
 - **Formulário de Contato**, para facilitar a comunicação.
 
+## 🛠️ Novas atualizações 16/10/2025
+- Período de construção em cada projeto
+- Reorganização do design e correção de bugs
+- Estruturação melhorada das informação
+- Adição de uma nova funcionalidade modo claro e escuro 
+- Criação de uma página de boas-vindas
+
 ## 📝 Durante o desenvolvimento, consolidei:
 - **Boas práticas** de organização de arquivos e códigos.
 - Uso de **HTML semântico**, persistência, atenção aos detalhes e disciplina.
