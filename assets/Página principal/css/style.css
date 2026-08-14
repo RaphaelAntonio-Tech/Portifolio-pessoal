@@ -1,49 +1,106 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --menu: #F4F8FB;
-    --background: #0C1D39;
-    --botoes: #4f82a9;
-    --card-projeto: #81818185;
-    --font: "Poppins", sans-serif;
+
+    /* =============== LIGHT MODE ====================== */
+
+    /* ===========================================
+      CORES DE BACKGROUND
+     ===========================================
+  */
+
+    --primaryBack: #F6FAFD;
+    --secundaryBack: #FFFF;
+    --thirdBack: #0C1D39;
+    --frourthBack: #1A3D63;
+    --fifthBack: #4A7FA7;
+    --sixthBack: #B3CFE5;
+
+
+    /* ===========================================
+      CORES DE TEXTO
+     ===========================================
+  */
+
+    --primaryText: #0C1D39;
+    --secundaryText: #CED2D7;
+    --thirdText: #4A7FA7;
+    --fourthText: #B3CFE5;
+
+    /* ===========================================
+      CORES DE ICONE
+     ===========================================
+  */
+
+    --primaryIcon: #FFFF;
+    --secundaryIcon: #F6FAFD;
+    --thirdIcon: #4A7FA7;
+
+    /* ===========================================
+      CORES DE BORDA
+     ===========================================
+  */
+
+    --primaryBorder: #b8bbbe;
+    --secundaryBorder: #CED2D7;
+    --thirdBorder: #818B9B;
+
+
+    /* ===========================================
+     TIPOGRAFIA
+     ===========================================
+  */
+
+    --font-primary: "Work Sans", sans-serif;
+    --font-secundary: "Raleway", sans-serif;
+
+    --regular: 400;
+    --medium: 500;
+    --SemiBold: 600;
+    --Bold: bold;
+
 }
 
-/* Cabeçario */
 * {
     margin: 0px;
     padding: 0px;
-    font-family: var(--font);
 }
 
 body {
-    background-color: var(--menu);
+    background-color: var(--primaryBack);
 }
 
+/* ==============================================
+ CABEÇARIO
+================================================= */
 .header {
-    background-color: var(--menu);
-    color: var(--background);
+    background-color: var(--secundaryBack);
+    color: var(--primaryText);
     padding-inline: 16px;
-    box-shadow: 5px 5px 5px #555555;
+    border-bottom: 2px solid var(--primaryBorder);
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    font-family: var(--font-secundary);
+    justify-content: space-around;
     align-items: center;
-    max-width: 1680px;
     gap: 6rem;
-    margin-inline: auto;
-    color: var(--background);
-    padding-block: 10px;
+    color: var(--primaryText);
+    padding-block: 15px;
 }
 
 .logo {
-    margin-left: 7%;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
 }
 
 .nav-list {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 50px;
 }
@@ -51,52 +108,56 @@ body {
 .nav-list a {
     padding-block: 10px;
     text-decoration: none;
-    color: var(--titulos);
+    color: var(--thirdText);
+    font-weight: var(--SemiBold);
     padding: 5px;
 }
 
 .nav-list a:hover {
-    background-color: var(--botoes);
-    transition: 1s;
-    color: var(--menu);
+    transition: 0.5s;
+    color: var(--fourthText);
     border-radius: 10px;
 }
 
-.hamburger {
-    display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid var(--botoes);
-    cursor: pointer;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: var(--botoes);
-    margin-top: 5px;
-    position: relative;
-    transition: 0.3s;
-}
 
 .modo {
-    background-color: var(--menu);
-    color: var(--background);
-    border: none;
+    border: 1px solid var(--primaryBorder);
+    background-color: var(--secundaryBack);
     cursor: pointer;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#moon:hover {
+    transition: 0.5s;
+    fill: var(--secundaryIcon);
 }
 
 .modo:hover {
-    background-color: var(--botoes);
-    color: var(--menu);
+    background-color: var(--sixthBack);
+    transition: 0.5s;
 
 }
 
+/* === HEADER RESPONSIVO === */
+
+.nav-responsive,
+.navlist-responsive,
+.hamburguer-menu {
+    display: none;
+}
+
+.background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a3d6398;
+    z-index: 2;
+    transition: ease-in 1s;
+}
 /* Aréa de apresentação */
 main {
     background-color: var(--menu);
@@ -376,9 +437,11 @@ main {
     width: 100px;
     margin-bottom: 10px;
 }
+
 .traço {
     width: 285%;
 }
+
 .texto-contato p {
     line-height: 1.6;
     max-width: 600px;
@@ -407,9 +470,71 @@ main {
     color: var(--menu);
     transition: 1s;
 }
-@media screen and (max-width: 900px) {
 
-    /* Cabeçario */
+@media  (min-width: 710px) and (max-width: 1133px) { 
+
+/* == HEADER == */
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list {
+    display: none;
+}
+
+
+/* === HEADER RESPONSIVO === */
+
+
+.nav-responsive {
+    display: flex;
+    align-items: center;
+    
+}
+.navlist-responsive {
+    display: block;
+    position: fixed;
+    left: -500px;
+    top: 0;
+    width: 300px;
+    background-color: var(--primaryBack);
+    padding: 20px;
+    height: 100%;
+    list-style: none;
+    gap: 50px;
+    transition: ease-in 1s;
+    z-index: 10;
+  
+}
+
+.navlist-responsive a {
+    display: flex;
+    font-family: var(--font-secundary);
+    text-decoration: none;
+    color: var(--thirdText);
+    font-weight: var(--SemiBold);
+    padding: 20px;
+    
+}
+
+.hamburguer-menu {
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--primaryBorder);
+    border-radius: 15px;
+    background-color: var(--secundaryBack);
+}
+
+.closeHamburguer {
+    display: flex;
+    justify-content: flex-end;
+}
+}
+
+@media (min-width: 370px) and (max-width: 710px) {
+
+      /* Cabeçario */
 
     .hamburger {
         content: " ";
@@ -615,3 +740,5 @@ main {
         gap: 50px;
     }
 }
+
+  
