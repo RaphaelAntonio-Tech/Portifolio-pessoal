@@ -1,38 +1,481 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/image/portifolio.ico" type="image/x-icon">
-    <title>Seja Bem-vindo!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
+    <title>Portfolio</title>
 </head>
+
 <body class="body">
-    <!--menu-->
-      <header class="header">
-      <nav class="nav">
-       <h1>Raphael Antônio</h1>
-          <button class="modo" onclick="modo()"><i class="fa-solid fa-sun"></i> Claro</button>
-        
-      </nav>
+
+    <!-- ==========================================
+     HEADER (CABEÇARIO)
+     ================================================ -->
+
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em"
+                    viewBox="0 0 1024 1024">
+                    <path d="M0 0h1024v1024H0z" fill="none" />
+                    <path fill="#4A7FA7"
+                        d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281l360-281.1c3.8-3 6.1-7.7 6.1-12.6" />
+                </svg>
+                Raphael Antônio<svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="none" stroke="#4A7FA7" stroke-linecap="square" stroke-width="2" d="M17 3.34L7 20.66" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" viewBox="0 0 1024 1024">
+                    <path d="M0 0h1024v1024H0z" fill="none" />
+                    <path fill="#4A7FA7"
+                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1l-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4" />
+                </svg>
+
+            </h1>
+
+            <ul class="nav-list">
+                <li><a class="item-list" href="index.html">Início</a></li>
+                <li><a class="item-list" href="../pages/sobre mim/index.html">Sobre mim</a></li>
+                <li><a class="item-list" href="../pages/Projetos/index.html">Projetos</a></li>
+                <li><a class="item-list" href="../pages/Serviços/index.html">Serviços</a></li>
+                <li><a class="item-list" href="../pages/Entre em contato/index.html">Entre em contato</a></li>
+                <button class="modo" onclick="modo()">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12.741 20.917a9.4 9.4 0 0 1-1.395-.105a9.141 9.141 0 0 1-1.465-17.7a1.18 1.18 0 0 1 1.21.281a1.27 1.27 0 0 1 .325 1.293a8.1 8.1 0 0 0-.353 2.68a8.27 8.27 0 0 0 4.366 6.857a7.6 7.6 0 0 0 3.711.993a1.242 1.242 0 0 1 .994 1.963a9.15 9.15 0 0 1-7.393 3.738M10.261 4.05a.2.2 0 0 0-.065.011a8.137 8.137 0 1 0 9.131 12.526a.22.22 0 0 0 .013-.235a.23.23 0 0 0-.206-.136a8.6 8.6 0 0 1-4.188-1.116a9.27 9.27 0 0 1-4.883-7.7a9.1 9.1 0 0 1 .4-3.008a.29.29 0 0 0-.069-.285a.18.18 0 0 0-.133-.057" />
+                    </svg>
+
+                </button>
+            </ul>
+        </nav>
+
+      
+
+        <!-- ================== Header responsivo ========================= -->
+
+        <nav class="nav-responsive">
+            <ul class="navlist-responsive">
+                 <div class="closeHamburguer" onclick="closeMenu()">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+                </svg>
+                </div>
+                <li><a class="item-list" href="index.html">Início</a></li>
+                <li><a class="item-list" href="../pages/sobre mim/index.html">Sobre mim</a></li>
+                <li><a class="item-list" href="../pages/Projetos/index.html">Projetos</a></li>
+                <li><a class="item-list" href="../pages/Serviços/index.html">Serviços</a></li>
+                <li><a class="item-list" href="../pages/Entre em contato/index.html">Entre em contato</a></li>
+            </ul>
+             <button class="hamburguer-menu" onclick="openMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path  d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
+</svg>
+</button>
+        </nav>
     </header>
 
-    <!--Seção Hero-->
-    <section class="hero">
-        <div class="esquerda">
-            <p>Olá, Eu me chamo</p>
-            <h1>Raphael Antônio</h1>
-            <span>Desenvolvedor Front-End</span>
-            <div class="pagina-principal">
-                <a href="assets/Página principal/index.html" title="Página Principal" class="entrarbtn"><i class="fa-solid fa-eye"></i> Saiba mais</a>
-            </div>
-        </div>
+   <div class="background"></div>
 
-        <div class="direita">
-            <img src="assets/image/foto perfil.png" alt="foto de perfil" class="foto">
-        </div>
-    </section>
-<script  defer src="js/script.js"></script>
+    <!-- ==========================================
+ ================================================ -->
+ 
+    <main class="coteudo">
+        <!-- Aréa de apresentação -->
+        <section class="coteudo-principal">
+            <div class="imagem-principal">
+                <img class="img-principal"src="assets/image/new foto.png" alt="imagem principal" >
+            </div>
+             
+            <article class="apresetacao">
+                <h1 class="txtp">Estudante de Análise e Desenvolvimento de Sistemas | Desenvolvedor Front-End</h1>
+                <p class="paragrafo">“Aprender a programar é como aprender uma nova linguagem: <br><strong>quanto mais
+                        você pratica, mais fluente se torna.</strong>”</p>
+                        <div class="button-rede-sociais">
+                           <a class="button-email " href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path  d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
+</svg> Enviar e-mail</a>
+                  <a class="button-linkedIn" href="https://www.linkedin.com/in/raphael-ant%C3%B4nio-desenvolvedorfull-stack/?skipRedirect=true" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path  d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+</svg> LinkedIn</a>
+                 <a class="button-instagram "  href="https://www.instagram.com/rafscode/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+</svg>Instagram</a> 
+              <a class="button-gitHub " href="https://github.com/RaphaelAntonio-Tech" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="currentColor" d="M21 10.955c0-1.84-.385-3.275-1.17-4.375c.4-2.655-.34-4.045-.425-4.2l-.265-.46l-.52.095c-.09.015-2.14.405-3.925 2.09c-.895-.09-1.82-.1-2.69-.1s-1.795.015-2.69.1C7.53 2.42 5.48 2.03 5.39 2.015l-.52-.095l-.265.46c-.09.155-.825 1.545-.425 4.2c-.79 1.1-1.17 2.54-1.17 4.375c0 4.24 2.84 5.73 5.45 6.255a3.8 3.8 0 0 0-.445 1.68c-.22.155-.59.36-1.005.36c-.615 0-.985-.42-1.545-1.1c-.6-.735-1.35-1.65-2.705-1.65h-.75V18h.75c.615 0 .985.42 1.545 1.1c.6.735 1.35 1.65 2.705 1.65c.37 0 .705-.075 1-.185V22h8v-3.005c0-.63-.155-1.24-.45-1.78c2.605-.525 5.45-2.02 5.45-6.255z" />
+</svg> GitHub</a>
+                        </div>
+            </article>
+        </section>
+        <!-- Área dos projetos -->
+        <section class="container-projetos">
+            <div class="titulo">
+                <h1>Projetos</h1>
+                <hr>
+            </div>
+            <article class="Projetos">
+                <div class="card-projetos">
+                    <h2 class="card-title">Curiosidade de Tecnologia</h2>
+                    <img src="../image/Curiosidades de tecnologia.png" alt="Curiosidade de tecnologia"
+                        title="Curiosidade de Tecnologia">
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo"> Desenvolvido durante a finalização do <strong>modulo 2 do curso de HTML5, CSS3
+                            do
+                            curso vídeo</strong> teve com objetivo ensinar aos alunos a como funciona a
+                        estrutura de um site e como funciona com objetivo de aprender a como criar um site
+                        simples e prático</p>
+                    <a href="../pages/Projetos/src/Curiosidades de tecnologia/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+
+                <div class="card-projetos">
+                    <h2 class="card-title">Criador de Animações com IA</h2>
+                    <img src="../image/Gerador Mágico de IA.png" alt="Gerador Mágico " title="Gerador Mágico com IA">
+
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <div class="skill">
+                            <img src="../image/n8n-color.png" alt="n8n">
+                            <span>n8n</span>
+                        </div>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">Desenvolvido durante um evento promovido pelo Rodolfo Mori <strong>"Programador
+                            do Futuro com IA"</strong> o projeto Criador Mágico de Animações com IA tem como objetivo
+                        acelerar o processo de criação de animações CSS através da automação com <strong>N8N</strong> e
+                        o uso de <strong>Inteligência Artificial</strong>.</p>
+                    <a href="../pages/Projetos/src/Gerador Mágico/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+
+                <div class="card-projetos">
+                    <h2 class="card-title">Cinedestino</h2>
+                    <img src="../image/Cinedestino.png" alt="Cinedestino" title="Cinedestino">
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-php"></i>php</p>
+                        <p class="tecnologias"><i class="fa-solid fa-database"></i>SQL</p>
+                        <p class="tecnologias"><i class="fa-brands fa-figma"></i>Figma</p>
+                        <p class="tecnologias"><i class="fa-solid fa-caret-up"></i>Vercel</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">Cinedestino é um site de filmes católicos fictício desenvolvido em dupla. O
+                        projeto possui um <strong>sistema de cadastro</strong> e <strong>login com autenticação por
+                            token</strong>, <strong>responsividade para ambos tamanhos de telas, foto de perfil e
+                            armazenamento.</strong></p>
+                    <a href="../pages/Projetos/src/Cinedestino/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+
+
+                <div class="card-projetos">
+                    <h2 class="card-title">Bem Estar Site</h2>
+                    <img src="../image/bem star site.png" alt="Bem Estar Site" title="Bem Estar Site">
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                        <p class="tecnologias"><i class="fa-brands fa-figma"></i>Figma</p>
+                        <p class="tecnologias"><i class="fa-solid fa-caret-up"></i>Vercel</p>
+                    </div>
+                    <p class="conteudo">Game Star é uma landing page desenvolvida como projeto pessoal, com o objetivo
+                        de praticar <strong>HTML, CSS, JavaScript</strong> e <strong>Figma</strong>, além de abordar um
+                        tema atual e relevante: <strong>o vício em telas e redes sociais.</strong></p>
+                    <a href="../pages/Projetos/src/Bem Estar Site/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+
+                <div class="card-projetos">
+                    <h2 class="card-title">Joalheria Fictícia</h2>
+                    <img src="../image/Joalheria fícticia.png" alt="Joalheria Fícticia" title="Joalheria Fictícia">
+                    <!-- Tecnologias Utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-solid fa-caret-up"></i>Vercel</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">
+                        Larana, Inc. é uma joalheria fictícia que criei em cima de um modelo de site do Canva. Evoluí a
+                        landing Page que <strong>criei para praticar 'background-image'</strong> e transformei o projeto
+                        em um pequeno laboratório de JavaScript e UX: a "Joalheria Fictícia".
+                    </p>
+                    <a href="../pages/Projetos/src/Joalheria Fictícia/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Contador Simples</h2>
+                    <img src="../image/Contador Simples.png" alt="Contador Simples" title="Contador Simples">
+
+                    <!-- Tecnologias Utilizadas no projeto -->
+
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-figma"></i>Figma</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">Contador Simples é um mini projeto que desenvolvi em prol da praticar conceitos
+                        fundamentais de <strong>estruturas de repetição</strong> e também a experimentar novas
+                        <strong>ferramentas de design</strong>.
+                    </p>
+                    <a href="../pages/Projetos/src/Contador Simples/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Entre Linhas & Cores</h2>
+                    <img src="../image/Galeria de Arte.png" alt="Entre Linhas & Cores" title="Entre Linhas & Cores">
+
+                    <!--Tecnologias Utilizada no projeto -->
+
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo"> É uma galeria de arte fictícia desenvolvida como projeto pessoal, com o
+                        objetivo de unir estética, navegação intuitiva e valorização da arte visual em um ambiente
+                        digital. A galeria foi desenvolvida com <strong>HTML, CSS</strong> e
+                        <strong>JavaScript</strong>, buscando boas práticas de acessibilidade, usabilidade e
+                        performance.
+                    </p>
+                    <a href="../pages/Projetos/src/Galeria de Arte/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+
+                <div class="card-projetos">
+                    <h2 class="card-title">Norte-94</h2>
+                    <img src="../image/Norte 94.png" alt="Norte-94" title="Norte-94">
+
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-js"></i>JavaScript</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo"> Primeiro projeto que utilizei <strong>JavaScript</strong>, simples e prático. A
+                        ideia principal é cria uma <strong>Landing Page</strong> simples e prática para uma loja de
+                        roupas e calçados femininos online fictícia, visando criar um ambiente visualmente atrativo, que
+                        destacasse cada produto com imagens, descrições e preços, como em um e-commerce real.</p>
+                    <a href="../pages/Projetos/src/Norte-94/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+                <div class="card-projetos">
+                    <h2 class="card-title">Restaurante Local</h2>
+                    <img src="../image/restaurante local.png" alt="Restaurante Local" title="Restaurante Local">
+
+                    <!-- Tecnologias utilizadas no projeto -->
+                    <div class="tech">
+                        <p class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</p>
+                        <p class="tecnologias"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p class="tecnologias"><i class="fa-brands fa-github"></i>github</p>
+                    </div>
+                    <p class="conteudo">Landing Page responsiva bem simples apenas utilizando <strong>HTML</strong> e
+                        <strong>CSS</strong>. O projeto foi pensado para criar uma experiência agradável ao visitante,
+                        destacando os principais serviços ou produtos de forma direta e visualmente atraente.
+                    </p>
+                    <a href="../pages/Projetos/src/Restaurante Local/index.html" class="button-card"><i
+                            class="fa-solid fa-eye"></i>Saiba Mais</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Área das habilidades -->
+        <section class="container-habilidades">
+            <h1 class="titulo-habilidade">Habilidades</h1>
+            <hr>
+            <article class="habilidades">
+                <h2 class="semi-titulo">Usando agora:</h2>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="card-habilidade"><i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-github"></i>
+                    <p>github</p>
+                </div>
+            </article>
+            <article class="habilidades">
+                <h2 class="semi-titulo">Aprendendo:</h2>
+
+                <div class="card-habilidade">
+                    <i class="fa-solid fa-file-video"></i>
+                    <p>Edição de Vídeo</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-solid fa-pen"></i>
+                    <p>Design</p>
+                </div>
+                <div class="card-habilidade">
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+            </article>
+
+            <!-- Área dos serviços -->
+
+            <article class="container-serviços">
+                <h1 class="container-h1">O que eu faço</h1>
+                <hr>
+                <div class="card-serviços">
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap"><i class="fa-regular fa-circle-check"></i></div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="image/estrutura.png" alt="estrutura" class="imagem-troca1">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Estrutura bem organizada com HTML</h3>
+                            <p>Crio páginas claras,com títulos, seções e elementos bem definidos.</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap"><i class="fa-regular fa-circle-check"></i></div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="image/Visual.png" alt="Visual atraente" title="Visual atraente com CSS"
+                                class="imagem-troca2">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3> Visual atraente com CSS</h3>
+                            <p>Layouts responsivos, modernos e adaptáveis a diferentes tamanhos de tela. Uso de cores,
+                                tipografias, ícones e imagens que combinem com sua identidade</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="image/Ajustes.png" alt="Ajustes e manutenção em projetos existentes"
+                                title="Ajustes e manutenção em projetos existentes" class="imagem-troca3">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Ajustes e manutenção em projetos existentes</h3>
+                            <p>Elementos interativos como botões funcionais, menus, calculadoras e outras ações simples
+                                no site.</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="image/criação.png" alt="Criação de páginas fictícias para portfólio ou estudo"
+                                title="Criação de páginas fictícias para portfólio ou estudo" class="imagem-troca4">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Criação de páginas fictícias para portfólio ou estudo</h3>
+                            <p>Sites criativos como restaurantes, cafeterias, galeria de arte, páginas de apresentação,
+                                entre outros.</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="image/Responsividade.png" alt="Responsividade" title="Responsividade"
+                                class="imagem-troca5">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Responsividade</h3>
+                            <p>Sites que funcionam bem tanto no computador quanto no celular</p>
+                        </div>
+                    </aside>
+                    <aside class="serviços">
+                        <div class="serviços-icon">
+                            <div class="icon-wrap">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="serviços-img">
+                            <img src="image/Interatividade.png" alt="Interatividade com JavaScript básico"
+                                title="Interatividade com JavaScript básico" class="imagem-troca6">
+                        </div>
+                        <hr>
+                        <div class="serviços-conteudo">
+                            <h3>Interatividade com JavaScript básico</h3>
+                            <p>Elementos interativos como botões funcionais, menus, calculadoras e outras ações simples
+                                no site.</p>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <!-- Área dos contato -->
+
+        <footer class="contato">
+            <div class="texto-contato">
+                <hr class="traço">
+                <h1 class="contato-titulo">Entre em contato</h1>
+                <hr class="tracin">
+                <p>Tem alguma ideia, projeto ou dúvida?
+                    Será um prazer conversar com você!
+                    Entre em contato comigo para falarmos sobre colaborações, sugestões ou apenas para trocar
+                    experiências.
+                    Vamos construir algo
+                    juntos!</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/rafscode/" target="_blank" title="Instagram" class="rede"><i
+                        class="fa-brands fa-instagram"></i>@RafsCode</a>
+                <a href="https://github.com/RaphaelAntonio-Tech" target="_blank" title="github" class="rede"><i
+                        class="fa-brands fa-github"></i>@Raphael Tech</a>
+                <a href="https://www.linkedin.com/in/raphael-ant%C3%B4nio-desenvolvedorfront-end/" target="_blank"
+                    title="LinkedIn" class="rede"><i class="fa-brands fa-linkedin-in"></i>@Raphael Antônio</a>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </main>
 </body>
+
 </html>
