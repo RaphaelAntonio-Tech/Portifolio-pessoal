@@ -1,21 +1,38 @@
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav");
+function openMenu() {
+    let shadow = document.querySelector(".background")
+    let navlistResponsive = document.querySelector('.navlist-responsive')
+    shadow.style.display = 'block'
 
-hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+    navlistResponsive.style.left= '410px'
+   
+}
+
+function closeMenu() {
+    let shadow = document.querySelector('.background')
+    let navlistResponsive = document.querySelector('.navlist-responsive')
+
+    shadow.style.display = 'none'
+    navlistResponsive.style.left= '-500px'
+}
 
 
 
 function modo() {
-    // Cabeçário (topo)
+    /*  ==========================================
+     HEADER (CABEÇARIO)
+     ================================================ */
+
     let header = document.querySelector('.header')
-    let button = document.querySelector('.modo')
-    let navL = document.querySelector('.nav')
+    let buttonMode = document.querySelector('.modo')
+    let Logo = document.querySelector('.logo')
+    let nav = document.querySelector('.nav')
+
+
     let imagemP = document.querySelector('.img')
     let h1 = document.querySelector('.txtp')
     let paragrafo = document.querySelector('.paragrafo')
     let buttonP = document.querySelector('.buttonPrincipal')
     let body = document.querySelector('.body')
-    let Navlist = document.querySelector('.nav-list')
 
     //Projetos
     let CardProjeto = document.querySelectorAll('.card-projetos')
@@ -29,7 +46,7 @@ function modo() {
     let cardHabilidade = document.querySelectorAll('.card-habilidade')
     let serviços = document.querySelectorAll('.serviços')
     let containerh1 = document.querySelector('.container-h1')
-   
+
     let imagemTroca1 = document.querySelector('.imagem-troca1')
     let imagemTroca2 = document.querySelector('.imagem-troca2')
     let imagemTroca3 = document.querySelector('.imagem-troca3')
@@ -48,25 +65,28 @@ function modo() {
         // modo escuro
 
         // Área principal (topo)
-        button.innerHTML = `<i class="fa-solid fa-moon"></i>Escuro`
-        button.style.color = '#f4f8fb'
-        button.style.background = '#0c1d39'
-        button.style.transition = '1s'
+        buttonMode.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
+	<path d="M0 0h512v512H0z" fill="none" />
+	<path fill = '#f4f8fb'  fill-rule="evenodd" d="M277.333 405.333v85.333h-42.667v-85.333zm99.346-58.824l60.34 60.34l-30.17 30.17l-60.34-60.34zm-241.359 0l30.17 30.17l-60.34 60.34l-30.17-30.17zM256 139.353c64.422 0 116.647 52.224 116.647 116.647c0 64.422-52.225 116.647-116.647 116.647A116.427 116.427 0 0 1 139.352 256c0-64.423 52.225-116.647 116.648-116.647m0 42.666c-40.859 0-73.981 33.123-73.981 74.062a73.76 73.76 0 0 0 21.603 52.296c13.867 13.867 32.685 21.64 52.378 21.603zm234.666 52.647v42.667h-85.333v-42.667zm-384 0v42.667H21.333v-42.667zM105.15 74.98l60.34 60.34l-30.17 30.17l-60.34-60.34zm301.7 0l30.169 30.17l-60.34 60.34l-30.17-30.17zM277.332 21.333v85.333h-42.667V21.333z" />
+</svg>
+`
 
-        Navlist.style.background = '#0c1d39'
+        buttonMode.style.color = '#f4f8fb'
+        buttonMode.style.background = '#0c1d39'
+        buttonMode.style.transition = '1s'
 
-        body.style.background = '#0c1d39'
+        header.style.background = '#0C1D39'
+        header.style.transition = '1s'
+
+        Logo.style.color = '#f4f8fb'
+        Logo.style.transition = '1s'
+
+        body.style.background = '#0C1D39'
         body.style.transition = '1s'
-
-        navL.style.color = '#f4f8fb'
-        navL.style.transition = '1s'
 
         buttonP.style.background = '#4F82A9'
         buttonP.style.transition = '1s'
 
-        header.style.background = '#0C1D39'
-        header.style.color = '#F4F8FB'
-        header.style.transition = '1s'
 
         paragrafo.style.color = '#979CA6'
         paragrafo.style.transition = '1s'
@@ -123,16 +143,19 @@ function modo() {
         // Área principal (topo)
         header.style.background = '#f4f8fb'
         header.style.color = '#0c1d39'
+        header.style.transition = '1s'
 
-        button.innerHTML = `<i class="fa-solid fa-sun"></i>Claro`
-        button.style.color = '#0c1d39'
-        button.style.background = '#f4f8fb'
+        Logo.style.color = '#0c1d39'
+        Logo.style.transition = '1s'
 
-        Navlist.style.background = '#f4f8fb'
-        Navlist.style.transition = '1s'
+        buttonMode.innerHTML = `  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12.741 20.917a9.4 9.4 0 0 1-1.395-.105a9.141 9.141 0 0 1-1.465-17.7a1.18 1.18 0 0 1 1.21.281a1.27 1.27 0 0 1 .325 1.293a8.1 8.1 0 0 0-.353 2.68a8.27 8.27 0 0 0 4.366 6.857a7.6 7.6 0 0 0 3.711.993a1.242 1.242 0 0 1 .994 1.963a9.15 9.15 0 0 1-7.393 3.738M10.261 4.05a.2.2 0 0 0-.065.011a8.137 8.137 0 1 0 9.131 12.526a.22.22 0 0 0 .013-.235a.23.23 0 0 0-.206-.136a8.6 8.6 0 0 1-4.188-1.116a9.27 9.27 0 0 1-4.883-7.7a9.1 9.1 0 0 1 .4-3.008a.29.29 0 0 0-.069-.285a.18.18 0 0 0-.133-.057" />
+                    </svg>`
+        buttonMode.style.color = '#0c1d39'
+        buttonMode.style.background = '#f4f8fb'
 
-        navL.style.color = '#0c1d39'
-        navL.style.transition = '1s'
 
         body.style.background = '#f4f8fb'
 
@@ -167,13 +190,13 @@ function modo() {
         if (serviços) serviços.forEach(c => c.style.color = '#0c1d39')
 
         containerh1.style.color = '#0c1d39'
-        
+
         imagemTroca1.src = "image/estrutura.png"
         imagemTroca2.src = "image/Visual.png"
         imagemTroca3.src = "image/Ajustes.png"
         imagemTroca4.src = "image/criação.png"
         imagemTroca5.src = "image/Responsividade.png"
-        imagemTroca6.src = "image/Interatividade.png" 
+        imagemTroca6.src = "image/Interatividade.png"
 
         // Contato
         contato.style.color = '#0c1d39'
@@ -183,3 +206,6 @@ function modo() {
         if (rede) rede.forEach(c => c.style.color = '#0c1d39')
     }
 }
+
+
+
