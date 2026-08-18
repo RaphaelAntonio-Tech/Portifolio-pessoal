@@ -16,6 +16,7 @@
     --frourthBack: #1A3D63;
     --fifthBack: #4A7FA7;
     --sixthBack: #B3CFE5;
+    --sevenback: #818B9B;
 
 
     /* ===========================================
@@ -24,9 +25,10 @@
   */
 
     --primaryText: #0C1D39;
-    --secundaryText: #CED2D7;
+    --secundaryText: #0c1d39a9;
     --thirdText: #4A7FA7;
     --fourthText: #B3CFE5;
+    --fifthText: #FFFF;
 
     /* ===========================================
       CORES DE ICONE
@@ -108,15 +110,14 @@ body {
 .nav-list a {
     padding-block: 10px;
     text-decoration: none;
-    color: var(--thirdText);
+    color: var(--primaryText);
     font-weight: var(--SemiBold);
     padding: 5px;
 }
 
 .nav-list a:hover {
-    transition: 0.5s;
-    color: var(--fourthText);
-    border-radius: 10px;
+    transition: 0.5s !important;
+    color: var(--fourthText) !important;
 }
 
 
@@ -158,7 +159,9 @@ body {
     z-index: 2;
     transition: ease-in 1s;
 }
+
 /* Aréa de apresentação */
+
 main {
     background-color: var(--menu);
 }
@@ -167,28 +170,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 40px;
+    padding: 60px 211px;
+    gap: 50px;
 }
 
-.imagem-principal img {
+.img-principal{
     max-width: 35.7rem;
     border-radius: 100%;
     background-color: #1C3E62;
+    box-shadow:0px 0px 40px #0c1d3983;
 }
 
-.apresetacao {
-    margin-left: 200px;
-    color: var(--background);
-}
 
 .apresetacao h1 {
-    color: var(--botoes);
+    color: var(--thirdText);
     font-size: 3.5rem;
-    padding-bottom: 5px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: var(--font-primary);
 }
 
 .apresetacao p {
     margin-bottom: 50px;
+    font-family: var(--font-secundary);
+    font-size: 20px;
+    color: var(--secundaryText);
 }
 
 .buttonPrincipal {
@@ -201,14 +208,101 @@ main {
     font-weight: bold;
 }
 
-.buttonPrincipal i {
-    margin-right: 10px;
+.button-rede-sociais {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
-.buttonPrincipal:hover {
-    background-color: var(--botoes);
-    transition: 0.5s;
-    color: var(--menu);
+.button-email {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--thirdIcon);
+    fill: var(--fifthText);
+    color: var(--fifthText);
+    padding: 20px 18px;
+    border-radius: 12px;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    gap: 8px;
+}
+
+.button-email:hover {
+      background-color: var(--sixthBack);
+      color: var(--primaryText);
+      fill: var(--primaryText);
+      transition: ease-in 0.5s ;
+}
+
+.button-linkedIn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--primaryBack);
+    fill: var(--secundaryText);
+    color: var(--secundaryText);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    border: 2px solid var(--thirdBorder);
+    padding: 20px 25px;
+    border-radius: 12px;
+    gap: 8px;
+}
+
+.button-linkedIn:hover {
+   background-color: var(--sevenback) !important;
+   color: var(--fifthText) !important;
+   fill: var(--fifthText) !important;
+   transition: ease-in 0.5s !important;
+}
+
+.button-instagram {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--primaryBack);
+    fill: var(--secundaryText);
+    color: var(--secundaryText);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    border: 2px solid var(--thirdBorder);
+    padding: 20px 25px;
+    border-radius: 12px;
+    gap: 8px;
+}
+
+.button-instagram:hover {
+   background-color: var(--sevenback) !important;
+   color: var(--fifthText) !important;
+   fill: var(--fifthText) !important;
+   transition: ease-in 0.5s !important;
+}
+
+.button-gitHub {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--primaryBack);
+    fill: var(--secundaryText);
+    color: var(--secundaryText);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    border: 2px solid var(--thirdBorder);
+    padding: 20px 25px;
+    border-radius: 12px;
+    gap: 8px;
+}
+
+.button-gitHub:hover {
+   background-color: var(--sevenback) !important;
+   color: var(--fifthText) !important;
+   fill: var(--fifthText) !important;
+   transition: ease-in 0.5s !important;
 }
 
 .container-projetos {
@@ -476,10 +570,14 @@ main {
 /* == HEADER == */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav-list {
+    gap: 33px;
+}
+
+.nav-list a{
     display: none;
 }
 
@@ -495,7 +593,7 @@ main {
 .navlist-responsive {
     display: block;
     position: fixed;
-    left: -500px;
+    left: 80%;
     top: 0;
     width: 300px;
     background-color: var(--primaryBack);
@@ -523,6 +621,7 @@ main {
     padding: 10px;
     border: 1px solid var(--primaryBorder);
     border-radius: 15px;
+    fill: var(--secundaryText);
     background-color: var(--secundaryBack);
 }
 
@@ -530,121 +629,150 @@ main {
     display: flex;
     justify-content: flex-end;
 }
+
+
+/* === Apresentação === */
+
+.coteudo-principal {
+    flex-direction: column;
+    padding: 60px 30px;
 }
 
+.apresetacao h1 {
+    font-size: 2.5em;
+}
+
+.apresetacao p {
+    font-size: 16px;
+}
+
+.button-email {
+    font-size: 16px;
+}
+
+.button-linkedIn {
+    font-size: 16px;
+}
+
+.button-instagram {
+    font-size: 16px;
+}
+
+.button-gitHub {
+    font-size: 16px;
+}
+
+}
 @media (min-width: 370px) and (max-width: 710px) {
 
-      /* Cabeçario */
+     /* == HEADER == */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .hamburger {
-        content: " ";
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 3px;
-        cursor: pointer;
-        z-index: 10;
-    }
+.nav-list {
+    gap: 0px;
+}
 
-    .nav-list {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: var(--menu);
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
+.nav-list a{
+    display: none;
+}
 
-        pointer-events: none;
 
-    }
+/* === HEADER RESPONSIVO === */
 
-    .nav-list a {
-        font-size: 24px;
-        opacity: 0;
-    }
 
-    .nav-list li:nth-child(1) a {
-        transition: 0.5s 0.2s;
-    }
+.nav-responsive {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    
+}
+.navlist-responsive {
+    display: block;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 245px;
+    background-color: var(--primaryBack);
+    padding: 20px;
+    height: 100%;
+    list-style: none;
+    gap: 50px;
+    transition: ease-in 1s;
+    z-index: 10;
+  
+}
 
-    .nav-list li:nth-child(2) a {
-        transition: 0.5s 0.4s;
-    }
+.navlist-responsive a {
+    display: flex;
+    font-family: var(--font-secundary);
+    text-decoration: none;
+    color: var(--thirdText);
+    font-weight: var(--SemiBold);
+    padding: 20px;
+    
+}
 
-    .nav-list li:nth-child(3) a {
-        transition: 0.5s 0.6s;
-    }
+.hamburguer-menu {
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--primaryBorder);
+    border-radius: 15px;
+    fill: var(--secundaryText);
+    background-color: var(--secundaryBack);
+}
 
-    /* Estilos ativos */
+.closeHamburguer {
+    display: flex;
+    justify-content: flex-end;
+    
+}
 
-    .nav.active .nav-list {
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
+    /* === Apresentação === */
 
-    .nav.active .nav-list a {
-        opacity: 1;
-    }
+.coteudo-principal {
+    flex-direction: column;
+    padding: 60px 30px;
+}
 
-    .nav.active .hamburger {
-        position: fixed;
-        top: 26px;
-        right: 16px;
-        border-top-color: transparent;
-    }
+.apresetacao h1 {
+    font-size: 1.9em;
+}
 
-    .nav.active .hamburger::before {
-        transform: rotate(135deg);
-    }
+.apresetacao p {
+    font-size: 16px;
+}
 
-    .nav.active .hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
+.img-principal {
+    max-width: 20.7rem;
+}
 
-    /* Aréa de apresentação */
+.button-rede-sociais {
+    flex-direction: column;
+    align-items: normal;
+}
 
-    .coteudo-principal {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 40px;
-    }
+.button-email {
+    font-size: 16px;
+    justify-content: center;
+}
 
-    .imagem-principal img {
-        width: 100%;
-        max-width: 15rem;
-    }
+.button-linkedIn {
+    font-size: 16px;
+    justify-content: center;
+}
 
-    .logo {
-        font-size: 24px
-    }
+.button-instagram {
+    font-size: 16px;
+    justify-content: center;
+}
 
-    .apresetacao {
-        margin-left: 18px;
-    }
-
-    .apresetacao h1 {
-        font-size: 1.8rem;
-    }
-
-    .apresetacao p {
-        margin-bottom: 40px;
-    }
-
-    .buttonPrincipal {
-        margin-left: 0px;
-        margin-top: 3rem;
-    }
-
-    .titulo h1 {
-        margin-top: 50px;
-    }
+.button-gitHub {
+    font-size: 16px;
+    justify-content: center;
+}
 
     /* Área dos projetos  */
 
