@@ -160,7 +160,7 @@ body {
     transition: ease-in 1s;
 }
 
-/* Aréa de apresentação */
+/* === Aréa de apresentação === */
 
 main {
     background-color: var(--menu);
@@ -305,6 +305,106 @@ main {
    transition: ease-in 0.5s !important;
 }
 
+/* === Área do sobre === */
+
+.sobre-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 133px 0px;
+    gap: 25px;
+}
+
+.title-sobre {
+   display: flex;
+   flex-direction: column;
+}
+
+.title-sobre p{
+   font-family: var(--font-primary);
+   color: var(--secundaryText);
+   font-size: 16px;
+   font-weight: var(--regular);
+}
+
+.title-sobre h1 {
+    font-family: var(--font-primary);
+    color: var(--primaryText);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.divisor-sobre hr{
+   background-color: var(--primaryBorder);
+   width: 83em;
+   border: none;
+   padding: 2px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px;
+    gap: 20px;
+}
+
+.sobre-mim h1{
+  color: var(--thirdText);
+  font-size: 32px;
+  font-family: var(--font-primary);
+}
+
+.paragrafo-sobre {
+    color: var(--secundaryText);
+    font-family: var(--font-secundary);
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+.part1-conteudo-sobre {
+    padding: 40px 0;
+}
+
+.button-sobre a {
+    background-color: var(--fifthBack);
+    color: var(--fifthText);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-weight: var(--SemiBold);
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 14px 23px;
+}
+
+.button-sobre a:hover {
+    background-color: var(--sixthBack);
+    color: var(--primaryText);
+    transition: 0.5s ease-in;
+}
+
+
+
+.sobre-image img {
+    width: 700px;
+}
+
+.sobre-container-container-responsivo,
+.sobre-title-container-responsivo,
+.conteudo-sobre-responsivo,
+.part1-conteudo-sobre-responsivo,
+.part2-conteudo-sobre-responsivo {
+    display: none;
+}
+
+
+
+
+
 .container-projetos {
     margin: 7% 10%;
 }
@@ -317,6 +417,9 @@ main {
 .titulo hr {
     width: 60px;
 }
+
+
+
 
 /* Área dos projetos  */
 .Projetos {
@@ -588,8 +691,9 @@ main {
 .nav-responsive {
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
+
 .navlist-responsive {
     display: block;
     position: fixed;
@@ -631,6 +735,177 @@ main {
 }
 
 
+.sobre-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 133px 0px;
+    gap: 25px;
+}
+
+
+.title-sobre p{
+   font-size: 16px;
+}
+
+.title-sobre h1 {
+    font-size: 40px;
+  
+}
+
+
+/* === Área do sobre === */
+
+.sobre-title-container {
+   display: none;
+}
+
+.title-sobre {
+   display: none;
+}
+
+.title-sobre p{
+   font-family: var(--font-primary);
+   color: var(--secundaryText);
+   font-size: 16px;
+   font-weight: var(--regular);
+}
+
+.title-sobre h1 {
+    font-family: var(--font-primary);
+    color: var(--primaryText);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.divisor-sobre hr{
+   background-color: var(--primaryBorder);
+   width: 44em;
+   border: none;
+   padding: 2px;
+}
+
+.conteudo-sobre {
+   display: none;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px;
+    gap: 20px;
+}
+
+.sobre-mim h1{
+  color: var(--thirdText);
+  font-size: 32px;
+  font-family: var(--font-primary);
+}
+
+.paragrafo-sobre {
+    color: var(--secundaryText);
+    font-family: var(--font-secundary);
+    font-size: 20px;
+    font-weight: var(--regular);
+    padding: 0px 30px;
+}
+
+.part1-conteudo-sobre {
+    padding: 40px 0;
+}
+
+.button-sobre a {
+    background-color: var(--fifthBack);
+    color: var(--fifthText);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-weight: var(--SemiBold);
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 14px 23px;
+}
+
+.button-sobre a:hover {
+    background-color: var(--sixthBack);
+    color: var(--primaryText);
+    transition: 0.5s ease-in;
+}
+
+
+.sobre-container-container-responsivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 133px 0px;
+    gap: 25px;
+}
+
+.sobre-title-container-responsivo {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-sobre-responsivo {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   flex-direction: column
+}
+
+.title-sobre-responsivo p{
+   font-family: var(--font-primary);
+   color: var(--secundaryText);
+   font-size: 16px;
+   font-weight: var(--regular);
+}
+
+.title-sobre-responsivo h1 {
+    font-family: var(--font-primary);
+    color: var(--primaryText);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.conteudo-sobre-responsivo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.part1-conteudo-sobre-responsivo {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    color: var(--primaryText);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.part1-conteudo-sobre-responsivo h1{
+    font-size: 2.5rem;
+    padding: 60px 30px;
+    font-family: var(--font-primary);
+    color: var(--thirdText);
+}
+
+.part2-conteudo-sobre-responsivo {
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-image-responsivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-image-responsivo img {
+    width: 500px;
+}
 /* === Apresentação === */
 
 .coteudo-principal {
@@ -730,6 +1005,147 @@ main {
     
 }
 
+/* === Área do sobre === */
+
+.sobre-title-container {
+   display: none;
+}
+
+.title-sobre {
+   display: none;
+}
+
+.conteudo-sobre {
+   display: none;
+}
+
+.container-projetos-responsivo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px;
+    gap: 20px;
+}
+
+.sobre-mim h1{
+  color: var(--thirdText);
+  font-size: 32px;
+  font-family: var(--font-primary);
+}
+
+.paragrafo-sobre {
+    color: var(--secundaryText);
+    font-family: var(--font-secundary);
+    font-size: 16px;
+    font-weight: var(--regular);
+    padding: 0px 30px;
+}
+
+.part1-conteudo-sobre {
+    padding: 40px 0;
+}
+
+.button-sobre a {
+    background-color: var(--fifthBack);
+    color: var(--fifthText);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-weight: var(--SemiBold);
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 14px 23px;
+}
+
+.button-sobre a:hover {
+    background-color: var(--sixthBack);
+    color: var(--primaryText);
+    transition: 0.5s ease-in;
+}
+
+
+.sobre-container-container-responsivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 133px 0px;
+    gap: 25px;
+}
+
+.sobre-title-container-responsivo {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-sobre-responsivo {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   flex-direction: column
+}
+
+.title-sobre-responsivo p{
+   font-family: var(--font-primary);
+   color: var(--secundaryText);
+   font-size: 16px;
+   font-weight: var(--regular);
+}
+
+.title-sobre-responsivo h1 {
+    font-family: var(--font-primary);
+    color: var(--primaryText);
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+.divisor-sobre hr {
+    width: 26em;
+}
+
+.conteudo-sobre-responsivo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.part1-conteudo-sobre-responsivo {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    color: var(--primaryText);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.part1-conteudo-sobre-responsivo h1{
+    font-size: 1.9rem;
+    padding: 60px 30px;
+    font-family: var(--font-primary);
+    color: var(--thirdText);
+}
+
+.part2-conteudo-sobre-responsivo {
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-image-responsivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-image-responsivo img {
+    width: 400px;
+}
+
     /* === Apresentação === */
 
 .coteudo-principal {
@@ -773,6 +1189,10 @@ main {
     font-size: 16px;
     justify-content: center;
 }
+
+/* === 
+
+
 
     /* Área dos projetos  */
 
