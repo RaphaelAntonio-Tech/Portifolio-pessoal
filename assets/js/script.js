@@ -38,14 +38,27 @@ function modo() {
     let buttonLinkedIn = document.querySelector('.button-linkedIn')
     let buttonInstragram = document.querySelector('.button-instagram')
     let buttonGithub = document.querySelector('.button-gitHub')
+    
+    // === Área do sobre === //
 
-    //Projetos
+    let titleSobre = document.querySelectorAll('.h1-sobre')
+    let pagrafoSobre = document.querySelectorAll('.p-sobre')
+    let paragrafoSobre = document.querySelectorAll('.paragrafo-sobre')
+    let mapa1 = document.querySelector('.troca-img1')
+    let mapa2 = document.querySelector('.troca-img2')
+
+
+
+
+    // === Projetos === //
+
     let CardProjeto = document.querySelectorAll('.card-projetos')
     let CardTitle = document.querySelectorAll('.card-title')
     let titulo = document.querySelector('.titulo')
     let conteudo = document.querySelector('.coteudo')
 
-    // Habilidades (oque eu faço)
+    // === Habilidades (oque eu faço) === //
+
     let TituloHabilidade = document.querySelector('.titulo-habilidade')
     let semiTituloHabilidade = document.querySelectorAll('.semi-titulo')
     let cardHabilidade = document.querySelectorAll('.card-habilidade')
@@ -59,7 +72,8 @@ function modo() {
     let imagemTroca5 = document.querySelector('.imagem-troca5')
     let imagemTroca6 = document.querySelector('.imagem-troca6')
 
-    // Contato 
+    // === Contato === //
+
     let contato = document.querySelector('.contato')
     let contatoTitulo = document.querySelector('.contato-titulo')
     let rede = document.querySelectorAll('.rede')
@@ -80,8 +94,6 @@ function modo() {
         Logo.style.transition = '1s'
 
         if (navList) navList.forEach(c => c.style.color = '#4f82a9');
-
-        
 
         buttonMode.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
 	<path d="M0 0h512v512H0z" fill="none" />
@@ -122,8 +134,20 @@ function modo() {
         buttonGithub.style.color = '#ffff'
         buttonGithub.style.fill = '#ffff'
         buttonGithub.style.transition = '1s'
-
         
+         // === Área do sobre === //
+
+         if (titleSobre) titleSobre.forEach(c => c.style.color = "#ffff")
+        if (titleSobre) titleSobre.forEach(c => c.style.transition = '1s')
+
+        if (pagrafoSobre) pagrafoSobre.forEach(c => c.style.color = '#979CA6')
+        if (pagrafoSobre) pagrafoSobre.forEach(c => c.style.transition = '1s')
+
+         if (paragrafoSobre) paragrafoSobre.forEach(c => c.style.color = '#979CA6');
+
+         mapa1.src = "assets/image/mapa tech - dark.png"
+         mapa2.src = "assets/image/mapa tech - dark.png"
+
 
         //Projetos
         if (CardProjeto) CardProjeto.forEach(c => c.style.background = '#f4f8fb');
@@ -150,12 +174,6 @@ function modo() {
 
         containerh1.style.color = '#f4f8fb'
 
-        imagemTroca1.src = 'image/estrutura modo escuro.png'
-        imagemTroca2.src = 'image/Visual modo escuro.png'
-        imagemTroca3.src = 'image/Ajustes modo escuro.png'
-        imagemTroca4.src = 'image/criação modo escuro.png'
-        imagemTroca5.src = 'image/Responsividade modo escuro.png'
-        imagemTroca6.src = 'image/Interatividade modo escuro.png'
 
 
         // Contato
@@ -184,7 +202,7 @@ function modo() {
         buttonMode.style.color = '#0c1d39'
         buttonMode.style.background = '#ffff'
 
-         buttonHamburguer.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+        buttonHamburguer.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
 	<path d="M0 0h24v24H0z" fill="none" />
 	<path fill="#0c1d39" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />`
         buttonHamburguer.style.background = "#ffff"
@@ -194,7 +212,7 @@ function modo() {
 
         imagemP.style.background = '#1C3E62'
 
-        paragrafo.style.color = '#0c1d39'
+        paragrafo.style.color = '#0c1d39a9'
 
         buttonLinkedIn.style.backgroundColor = '#f4f8fb'
         buttonLinkedIn.style.color = '#0c1d39a9'
@@ -209,7 +227,17 @@ function modo() {
         buttonGithub.style.backgroundColor = '#f4f8fb'
         buttonGithub.style.color = '#0c1d39a9'
         buttonGithub.style.fill = '#0c1d39a9'
-      
+        
+        // === Área do sobre === //
+
+         titleSobre.style.color = '#0c1d39'
+         pagrafoSobre.style.color = '#0c1d39a9'
+
+         if (paragrafoSobre) paragrafoSobre.forEach(c => c.style.color = '#0c1d39a9');
+
+         mapa1.src = "assets/image/mapa tech - light.png"
+         mapa2.src = "assets/image/mapa tech - light.png"
+
 
         //Projetos
         titulo.style.color = '#0c1d39'
@@ -235,12 +263,7 @@ function modo() {
 
         containerh1.style.color = '#0c1d39'
 
-        imagemTroca1.src = "image/estrutura.png"
-        imagemTroca2.src = "image/Visual.png"
-        imagemTroca3.src = "image/Ajustes.png"
-        imagemTroca4.src = "image/criação.png"
-        imagemTroca5.src = "image/Responsividade.png"
-        imagemTroca6.src = "image/Interatividade.png"
+      
 
         // Contato
         contato.style.color = '#0c1d39'
