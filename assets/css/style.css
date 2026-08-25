@@ -96,6 +96,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    font-size: 48px;
     font-family: var(--font-primary);
     font-weight: var(--regular);
 }
@@ -109,6 +110,7 @@ body {
 
 .nav-list a {
     padding-block: 10px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--primaryText);
     font-weight: var(--SemiBold);
@@ -148,6 +150,14 @@ body {
     display: none;
 }
 
+.sobre-container-container-responsivo,
+.sobre-title-container-responsivo,
+.conteudo-sobre-responsivo,
+.part1-conteudo-sobre-responsivo,
+.part2-conteudo-sobre-responsivo {
+    display: none;
+}
+
 .background {
     display: none;
     position: fixed;
@@ -162,23 +172,46 @@ body {
 
 /* === Aréa de apresentação === */
 
-main {
-    background-color: var(--menu);
-}
-
-.coteudo-principal {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 211px;
-    gap: 50px;
+    flex-direction: column;
+    width: 100%;
+    min-height: 80vh;
 }
 
-.img-principal{
-    max-width: 35.7rem;
+
+.conteudo-apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    max-width: 2580px;
+    padding: 4rem 5%;
+    gap: 4rem;
+    box-sizing: border-box;
+}
+
+.imagem-apresentacao {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-apresentacao {
+    width: 100%;
+    max-width: 710px;
+    height: auto;
     border-radius: 100%;
     background-color: #1C3E62;
     box-shadow:0px 0px 40px #0c1d3983;
+}
+
+.apresetacao {
+    flex: 1 1 60%;
 }
 
 
@@ -311,7 +344,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 133px 0px;
+    padding: 133px 0;
     gap: 25px;
 }
 
@@ -336,7 +369,7 @@ main {
 
 .divisor-sobre hr{
    background-color: var(--primaryBorder);
-   width: 83em;
+   width: 100em;
    border: none;
    padding: 2px;
 }
@@ -349,14 +382,19 @@ main {
 .sobre-mim {
     display: flex;
     flex-direction: column;
+    max-width: 1500px;
     padding: 0 70px;
     gap: 20px;
 }
 
 .sobre-mim h1{
   color: var(--thirdText);
-  font-size: 32px;
+   font-size: 3.5rem;
   font-family: var(--font-primary);
+}
+
+.sobre-image img {
+    width: 800px;
 }
 
 .paragrafo-sobre {
@@ -377,7 +415,7 @@ main {
     font-family: var(--font-primary);
     font-weight: var(--SemiBold);
     border-radius: 14px;
-    font-size: 16px;
+    font-size: 20px;
     padding: 14px 23px;
 }
 
@@ -387,19 +425,85 @@ main {
     transition: 0.5s ease-in;
 }
 
+/* === Área dos serviços === */ 
 
 
-.sobre-image img {
-    width: 700px;
+.servicos-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 133px 0;
+    gap: 25px;
 }
 
-.sobre-container-container-responsivo,
-.sobre-title-container-responsivo,
-.conteudo-sobre-responsivo,
-.part1-conteudo-sobre-responsivo,
-.part2-conteudo-sobre-responsivo {
-    display: none;
+.servicos-title p {
+   font-family: var(--font-primary);
+   color: var(--secundaryText);
+   font-size: 16px;
+   font-weight: var(--regular);
 }
+
+.servicos-title h1 {
+  font-family: var(--font-primary);
+  color: var(--primaryText);
+  font-size: 48px;
+  font-weight: bold;;
+}
+
+.divisor-servicos hr{
+   background-color: var(--primaryBorder);
+   width: 100em;
+   border: none;
+   padding: 2px;
+}
+
+.servicos-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-servico {
+  background-color: var(--secundaryBack);
+  padding: 20px;
+  width: 390px;
+  height: 450px;
+  border: 2px solid var(--secundaryBorder);
+  border-radius: 31px;
+}
+
+.icon-servico svg{
+    border-radius:  20px;
+    padding: 10px;
+    background-color: var(--fifthBack);
+    fill: var(--secundaryIcon);
+}
+
+.conteudo-card-servico {
+    padding: 10px 0;
+}
+.titulo-card {
+    padding: 5px 0;
+    font-family: var(--font-primary);
+}
+.conteudo-card-servico p{
+    color: var(--primaryText);
+    font-family: var(--font-secundary);
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.list-tech {
+    list-style: none;
+    color: var(--primaryText);
+    font-size: 20px;
+    padding: 5px 0;
+    font-family: var(--font-secundary);
+}
+
+
 
 
 
@@ -408,6 +512,10 @@ main {
 .container-projetos {
     margin: 7% 10%;
 }
+
+
+
+
 
 .titulo h1 {
     font-size: 40px;
@@ -615,7 +723,7 @@ main {
 /* Área dos serviços  */
 
 .contato {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-start;
     padding: 116px;
@@ -671,9 +779,9 @@ main {
 @media  (min-width: 710px) and (max-width: 1133px) { 
 
 /* == HEADER == */
-.header {
-    display: flex;
-    justify-content: space-between;
+
+.logo {
+    font-size: 30px;
 }
 
 .nav-list {
@@ -697,7 +805,7 @@ main {
 .navlist-responsive {
     display: block;
     position: fixed;
-    left: 80%;
+    left: 100%;
     top: 0;
     width: 300px;
     background-color: var(--primaryBack);
@@ -751,6 +859,47 @@ main {
 .title-sobre h1 {
     font-size: 40px;
   
+}
+
+
+/* === Apresentação === */
+
+.conteudo-apresentacao {
+    height: 180vh;
+    flex-direction: column;
+    padding: 60px 30px;
+}
+
+.imagem-apresentacao {
+    flex: 1 1 0;
+}
+
+.img-apresentacao {
+    max-width: 500px;
+}
+
+.apresetacao h1 {
+    font-size: 2.5em;
+}
+
+.apresetacao p {
+    font-size: 16px;
+}
+
+.button-email {
+    font-size: 16px;
+}
+
+.button-linkedIn {
+    font-size: 16px;
+}
+
+.button-instagram {
+    font-size: 16px;
+}
+
+.button-gitHub {
+    font-size: 16px;
 }
 
 
@@ -906,36 +1055,48 @@ main {
 .sobre-image-responsivo img {
     width: 500px;
 }
-/* === Apresentação === */
 
-.coteudo-principal {
+/* === Área dos serviços === */ 
+.servicos-container {
+  
+}
+
+.servicos-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding: 60px 30px;
+    padding: 133px 0px;
+    gap: 25px;
 }
 
-.apresetacao h1 {
-    font-size: 2.5em;
+.servicos-title p {
+   font-family: var(--font-primary);
+   color: var(--secundaryText);
+   font-size: 16px;
+   font-weight: var(--regular);
 }
 
-.apresetacao p {
-    font-size: 16px;
+.servicos-title h1 {
+  font-size: 48px;
 }
 
-.button-email {
-    font-size: 16px;
+.divisor-servicos hr{
+   width: 40em;
 }
 
-.button-linkedIn {
-    font-size: 16px;
+.servicos-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button-instagram {
-    font-size: 16px;
+
+
+.contato {
+    display: none;
 }
 
-.button-gitHub {
-    font-size: 16px;
-}
 
 }
 @media (min-width: 370px) and (max-width: 710px) {
@@ -946,8 +1107,16 @@ main {
     justify-content: space-between;
 }
 
+.nav {
+    gap: 0rem;
+}
+
+.logo {
+    font-size: 1.9em;
+}
+
 .nav-list {
-    gap: 0px;
+    gap: 10px;
 }
 
 .nav-list a{
@@ -1004,6 +1173,31 @@ main {
     justify-content: flex-end;
     
 }
+
+
+/* === Apresentação === */
+
+.conteudo-apresentacao {
+    flex-direction: column;
+     height: 195vh;
+    padding: 60px 30px;
+}
+
+.apresetacao h1 {
+    font-size: 1.9em;
+}
+
+.apresetacao p {
+    font-size: 16px;
+}
+
+.imagem-apresentacao {
+    flex: 1 1 0;
+}
+
+.img-apresentacao {
+    width: 280px;
+ }
 
 /* === Área do sobre === */
 
@@ -1103,7 +1297,7 @@ main {
 }
 
 .divisor-sobre hr {
-    width: 26em;
+    width: 20em;
 }
 
 .conteudo-sobre-responsivo {
@@ -1143,28 +1337,10 @@ main {
 }
 
 .sobre-image-responsivo img {
-    width: 400px;
+    width: 360px;
 }
 
-    /* === Apresentação === */
-
-.coteudo-principal {
-    flex-direction: column;
-    padding: 60px 30px;
-}
-
-.apresetacao h1 {
-    font-size: 1.9em;
-}
-
-.apresetacao p {
-    font-size: 16px;
-}
-
-.img-principal {
-    max-width: 20.7rem;
-}
-
+    
 .button-rede-sociais {
     flex-direction: column;
     align-items: normal;
@@ -1190,8 +1366,42 @@ main {
     justify-content: center;
 }
 
-/* === 
+/* === Área dos serviços === */ 
 
+
+.servicos-title-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicos-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicos-title h1 {
+    font-size: 32px;
+}
+
+.divisor-servicos hr{
+   width: 20em;
+}
+
+.card-servico {
+  width: 300px;
+  height: 550px;
+}
+
+.conteudo-card-servico p{
+    font-size: 16px;
+}
+
+.list-tech {
+    font-size: 16px;
+}
 
 
     /* Área dos projetos  */
@@ -1269,6 +1479,7 @@ main {
     /* Área dos serviços  */
 
     .contato {
+        display: none;
         flex-direction: column;
         text-align: center;
         align-items: center;
