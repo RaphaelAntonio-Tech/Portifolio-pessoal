@@ -33,7 +33,7 @@ function modo() {
 
     // == Apresentação == //
 
-    let imagemP = document.querySelector('.img-principal')
+    let imagemP = document.querySelector('.img-apresentacao')
     let paragrafo = document.querySelector('.paragrafo')
     let buttonLinkedIn = document.querySelector('.button-linkedIn')
     let buttonInstragram = document.querySelector('.button-instagram')
@@ -65,12 +65,7 @@ function modo() {
     let serviços = document.querySelectorAll('.serviços')
     let containerh1 = document.querySelector('.container-h1')
 
-    let imagemTroca1 = document.querySelector('.imagem-troca1')
-    let imagemTroca2 = document.querySelector('.imagem-troca2')
-    let imagemTroca3 = document.querySelector('.imagem-troca3')
-    let imagemTroca4 = document.querySelector('.imagem-troca4')
-    let imagemTroca5 = document.querySelector('.imagem-troca5')
-    let imagemTroca6 = document.querySelector('.imagem-troca6')
+    
 
     // === Contato === //
 
@@ -185,8 +180,9 @@ function modo() {
 
     } else {
         //modo claro
-
+        
         // Área principal (topo)
+        body.style.background = '#f4f8fb'
         header.style.background = '#ffff'
         header.style.color = '#0c1d39'
         header.style.transition = '1s'
@@ -208,7 +204,6 @@ function modo() {
         buttonHamburguer.style.background = "#ffff"
         buttonHamburguer.style.transition = "1s"
 
-        body.style.background = '#f4f8fb'
 
         imagemP.style.background = '#1C3E62'
 
