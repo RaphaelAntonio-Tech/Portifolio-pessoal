@@ -3,8 +3,8 @@ function openMenu() {
     let navlistResponsive = document.querySelector('.navlist-responsive')
     shadow.style.display = 'block'
 
-    navlistResponsive.style.left= '34%'
-   
+    navlistResponsive.style.left = '34%'
+
 }
 
 function closeMenu() {
@@ -12,7 +12,7 @@ function closeMenu() {
     let navlistResponsive = document.querySelector('.navlist-responsive')
 
     shadow.style.display = 'none'
-    navlistResponsive.style.left= '100%'
+    navlistResponsive.style.left = '100%'
 }
 
 
@@ -38,7 +38,7 @@ function modo() {
     let buttonLinkedIn = document.querySelector('.button-linkedIn')
     let buttonInstragram = document.querySelector('.button-instagram')
     let buttonGithub = document.querySelector('.button-gitHub')
-    
+
     // === Área do sobre === //
 
     let titleSobre = document.querySelectorAll('.h1-sobre')
@@ -47,7 +47,14 @@ function modo() {
     let mapa1 = document.querySelector('.troca-img1')
     let mapa2 = document.querySelector('.troca-img2')
 
-
+    // === Área dos serviços === //
+    let conteudoCard = document.querySelectorAll('.card-servico')
+    let titleCard = document.querySelectorAll('.titulo-card')
+    let paragrafoCard = document.querySelectorAll('.paragrafo-card')
+    let listCard = document.querySelectorAll('.list-tech')
+    let cardEmail = document.querySelector('.card-email-container')
+    let  titleEmail = document.querySelector('.title-email')
+    let paragrafoEmail = document.querySelector('.paragrafo-email')
 
 
     // === Projetos === //
@@ -65,7 +72,7 @@ function modo() {
     let serviços = document.querySelectorAll('.serviços')
     let containerh1 = document.querySelector('.container-h1')
 
-    
+
 
     // === Contato === //
 
@@ -77,14 +84,14 @@ function modo() {
 
     if (document.body.classList.contains('.modo')) {
         // modo escuro
-        
+
         // Área principal (topo)
         body.style.background = '#0C1D39'
         body.style.transition = '1s'
 
         header.style.background = '#0C1D39'
         header.style.transition = '1s'
-        
+
         Logo.style.color = '#f4f8fb'
         Logo.style.transition = '1s'
 
@@ -129,58 +136,41 @@ function modo() {
         buttonGithub.style.color = '#ffff'
         buttonGithub.style.fill = '#ffff'
         buttonGithub.style.transition = '1s'
-        
-         // === Área do sobre === //
 
-         if (titleSobre) titleSobre.forEach(c => c.style.color = "#ffff")
+        // === Área do sobre === //
+
+        if (titleSobre) titleSobre.forEach(c => c.style.color = "#ffff")
         if (titleSobre) titleSobre.forEach(c => c.style.transition = '1s')
 
         if (pagrafoSobre) pagrafoSobre.forEach(c => c.style.color = '#979CA6')
         if (pagrafoSobre) pagrafoSobre.forEach(c => c.style.transition = '1s')
 
-         if (paragrafoSobre) paragrafoSobre.forEach(c => c.style.color = '#979CA6');
+        if (paragrafoSobre) paragrafoSobre.forEach(c => c.style.color = '#979CA6');
 
-         mapa1.src = "assets/image/mapa tech - dark.png"
-         mapa2.src = "assets/image/mapa tech - dark.png"
+        mapa1.src = "assets/image/mapa tech - dark.png"
+        mapa2.src = "assets/image/mapa tech - dark.png"
 
+        // === Área dos serviços === //
+        if (conteudoCard) conteudoCard.forEach(c => c.style.background = '#1B3F64')
+        if (conteudoCard) conteudoCard.forEach(c => c.style.border = '2px solid #4F82A9')
 
-        //Projetos
-        if (CardProjeto) CardProjeto.forEach(c => c.style.background = '#f4f8fb');
+        if (titleCard) titleCard.forEach(c => c.style.color = '#F6FBFC')
 
-        conteudo.style.background = '#0c1d39'
-        conteudo.style.transition = '1s'
+        if (paragrafoCard) paragrafoCard.forEach(c => c.style.color = '#4f82a9')
 
-        titulo.style.color = '#f4f8fb'
+        if (listCard) listCard.forEach(c => c.style.color = '#4f82a9')
 
-        if (CardTitle) CardTitle.forEach(c => c.style.color = '#0c1d39')
+        cardEmail.style.background = '#1b3f64'
+        cardEmail.style.border = '2px solid #4f82a9'
 
-        // Habilidades (oque eu faço)
+        titleEmail.style.color = '#F6FBFC'
+        
+        paragrafoEmail.style.color = '#4f82a9'
 
-        if (cardHabilidade) cardHabilidade.forEach(c => c.style.color = '#f4f8fb')
-
-        if (cardHabilidade) cardHabilidade.forEach(c => c.style.background = '#1a3d63')
-
-        if (semiTituloHabilidade) semiTituloHabilidade.forEach(c => c.style.color = '#f4f8fb')
-
-        if (serviços) serviços.forEach(c => c.style.background = '#1a3d63')
-        if (serviços) serviços.forEach(c => c.style.color = '#f4f8fb')
-
-        TituloHabilidade.style.color = '#f4f8fb'
-
-        containerh1.style.color = '#f4f8fb'
-
-
-
-        // Contato
-        contato.style.color = '#f4f8fb'
-
-        contatoTitulo.style.color = '#f4f8fb'
-
-        if (rede) rede.forEach(c => c.style.color = '#f4f8fb')
 
     } else {
         //modo claro
-        
+
         // Área principal (topo)
         body.style.background = '#f4f8fb'
         header.style.background = '#ffff'
@@ -212,60 +202,45 @@ function modo() {
         buttonLinkedIn.style.backgroundColor = '#f4f8fb'
         buttonLinkedIn.style.color = '#0c1d39a9'
         buttonLinkedIn.style.fill = '#0c1d39a9'
-   
+
 
         buttonInstragram.style.backgroundColor = '#f4f8fb'
         buttonInstragram.style.color = '#0c1d39a9'
         buttonInstragram.style.fill = '#0c1d39a9'
-     
+
 
         buttonGithub.style.backgroundColor = '#f4f8fb'
         buttonGithub.style.color = '#0c1d39a9'
         buttonGithub.style.fill = '#0c1d39a9'
-        
+
         // === Área do sobre === //
 
-         titleSobre.style.color = '#0c1d39'
-         pagrafoSobre.style.color = '#0c1d39a9'
+        if (titleSobre) titleSobre.forEach(c => c.style.color = "#0C1D39")
 
-         if (paragrafoSobre) paragrafoSobre.forEach(c => c.style.color = '#0c1d39a9');
+        if (paragrafoSobre) paragrafoSobre.forEach(c => c.style.color = '#0c1d39a9');
 
-         mapa1.src = "assets/image/mapa tech - light.png"
-         mapa2.src = "assets/image/mapa tech - light.png"
+        mapa1.src = "assets/image/mapa tech - light.png"
+        mapa2.src = "assets/image/mapa tech - light.png"
 
+        // === Área dos serviços === //
+        if (conteudoCard) conteudoCard.forEach(c => c.style.background = '#FFFF')
+        if (conteudoCard) conteudoCard.forEach(c => c.style.border = '2px solid #CED2Dd')
 
-        //Projetos
-        titulo.style.color = '#0c1d39'
+        if (titleCard) titleCard.forEach(c => c.style.color = '#0C1D39')
 
-        TituloHabilidade.style.color = '#0c1d39'
+        if (paragrafoCard) paragrafoCard.forEach(c => c.style.color = '#0c1d39')
 
-        conteudo.style.background = '#f4f8fb'
+        if (listCard) listCard.forEach(c => c.style.color = '#0c1d39')
 
-        if (CardProjeto) CardProjeto.forEach(c => c.style.background = '#99A0A5');
+        cardEmail.style.background = '#FFFF'
+        cardEmail.style.border = '2px solid #CED2Dd'
 
-        if (CardTitle) CardTitle.forEach(c => c.style.color = '#f4f8fb')
+        titleEmail.style.color = '#0C1D39'
+        
+        paragrafoEmail.style.color = '#4f82a9'
 
-
-        // Habilidades (oque eu faço)
-        if (cardHabilidade) cardHabilidade.forEach(c => c.style.color = '#0c1d39')
-
-        if (cardHabilidade) cardHabilidade.forEach(c => c.style.background = '#f4f8fb')
-
-        if (semiTituloHabilidade) semiTituloHabilidade.forEach(c => c.style.color = '#0c1d39')
-
-        if (serviços) serviços.forEach(c => c.style.background = '#f4f8fb')
-        if (serviços) serviços.forEach(c => c.style.color = '#0c1d39')
-
-        containerh1.style.color = '#0c1d39'
 
       
-
-        // Contato
-        contato.style.color = '#0c1d39'
-
-        contatoTitulo.style.color = '#0c1d39'
-
-        if (rede) rede.forEach(c => c.style.color = '#0c1d39')
     }
 }
 
