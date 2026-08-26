@@ -426,7 +426,13 @@ body {
 }
 
 /* === Área dos serviços === */ 
-
+.servicos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 
 .servicos-title-container {
     display: flex;
@@ -503,9 +509,53 @@ body {
     font-family: var(--font-secundary);
 }
 
+.card-email-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: var(--secundaryBack);
+    border-radius: 29px;
+    border: 2px solid var(--secundaryBorder);
+    padding: 50px;
+}
 
+.email-message {
+    display: flex;
+    flex-direction: column;
+}
 
+.email-message h1 {
+    color: var(--primaryText);
+    padding: 10px 0;
+    font-size: 32px;
+    font-family: var(--font-primary);
+}
 
+.email-message p {
+    color: var(--secundaryText);
+    font-family: var(--font-secundary);
+    gap: 20px;
+}
+
+.button-contato-email {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    fill: var(--primaryIcon);
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: var(--fifthBack);
+}
+
+.button-contato-email a {
+    align-items: center;
+    text-decoration: none;
+    color: var(--fifthText);
+    font-family: var(--font-primary);
+    font-weight: var(--Bold);
+
+}
 
 
 
@@ -1057,10 +1107,6 @@ body {
 }
 
 /* === Área dos serviços === */ 
-.servicos-container {
-  
-}
-
 .servicos-title-container {
     display: flex;
     align-items: center;
@@ -1089,6 +1135,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-email-container {
+    flex-direction: column;
+    padding: 25px;
 }
 
 
@@ -1402,6 +1453,24 @@ body {
 .list-tech {
     font-size: 16px;
 }
+.card-email-container {
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+}
+
+.email-message p {
+    font-size: 16px;
+}
+
+.button-contato-email a {
+    font-size: 16px;
+}
+
+
+
+
+
 
 
     /* Área dos projetos  */
