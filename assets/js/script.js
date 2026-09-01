@@ -244,5 +244,53 @@ function modo() {
     }
 }
 
+// todos os projetos
+
+function AllProject() {
+    const Professionalstudies = document.querySelectorAll('.Professionalstudies')
+    const Studies = document.querySelectorAll('.studies')
+    const Professional = document.querySelectorAll('.Professional')
+
+    if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "block")
+
+    if (Studies) Studies.forEach(c => c.style.display = "block")
+        
+    if (Professional) Professional.forEach(c => c.style.display = "block")    
+}
+
+function ProjectStudies() {
+    const Professionalstudies = document.querySelectorAll('.Professionalstudies')
+    const Studies = document.querySelectorAll('.studies')
+    const Professional = document.querySelectorAll('.Professional')
+
+    if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "none")
+
+    if (Studies) Studies.forEach(c => c.style.display = "block")
+        
+    if (Professional) Professional.forEach(c => c.style.display = "none")    
+}
+
+function ProjectProfessional () {
+    const Professionalstudies = document.querySelectorAll('.Professionalstudies')
+    const Studies = document.querySelectorAll('.studies')
+    const Professional = document.querySelectorAll('.Professional')
+
+    if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "none")
+
+    if (Studies) Studies.forEach(c => c.style.display = "none")
+        
+    if (Professional) Professional.forEach(c => c.style.display = "block")    
+}
 
 
+function Professionalstudies() {
+    const Professionalstudies = document.querySelectorAll('.Professionalstudies')
+    const Studies = document.querySelectorAll('.studies')
+    const Professional = document.querySelectorAll('.Professional')
+
+    if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "block")
+
+    if (Studies) Studies.forEach(c => c.style.display = "none")
+        
+    if (Professional) Professional.forEach(c => c.style.display = "none")    
+}
