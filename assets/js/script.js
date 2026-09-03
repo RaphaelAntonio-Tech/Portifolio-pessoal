@@ -53,7 +53,7 @@ function modo() {
     let paragrafoCard = document.querySelectorAll('.paragrafo-card')
     let listCard = document.querySelectorAll('.list-tech')
     let cardEmail = document.querySelector('.card-email-container')
-    let  titleEmail = document.querySelector('.title-email')
+    let titleEmail = document.querySelector('.title-email')
     let paragrafoEmail = document.querySelector('.paragrafo-email')
 
 
@@ -61,24 +61,20 @@ function modo() {
 
     let CardProjeto = document.querySelectorAll('.card-projetos')
     let CardTitle = document.querySelectorAll('.card-title')
-    let titulo = document.querySelector('.titulo')
-    let conteudo = document.querySelector('.coteudo')
+    let dateProject = document.querySelectorAll('.data-projetos')
+    let ClassProject = document.querySelectorAll('.name-project')
+    let conteudo = document.querySelectorAll('.conteudo')
+    let tecnologias = document.querySelectorAll('.tecnologias')
+    let buttonCard = document.querySelectorAll('.button-card')
+    let buttonStudies = document.querySelector('#buttonEstudos')
+    let buttonProfessional = document.querySelector('#buttonProfissional')
+    let buttonProstudies = document.querySelector('#buttonProfissionalEstudos')
 
-    // === Habilidades (oque eu faço) === //
-
-    let TituloHabilidade = document.querySelector('.titulo-habilidade')
-    let semiTituloHabilidade = document.querySelectorAll('.semi-titulo')
-    let cardHabilidade = document.querySelectorAll('.card-habilidade')
-    let serviços = document.querySelectorAll('.serviços')
-    let containerh1 = document.querySelector('.container-h1')
-
-
-
-    // === Contato === //
-
-    let contato = document.querySelector('.contato')
-    let contatoTitulo = document.querySelector('.contato-titulo')
-    let rede = document.querySelectorAll('.rede')
+    // Contato
+    let subTitle = document.querySelectorAll('.subtitle-contact')
+    let titleContact = document.querySelectorAll('.title-contact')
+    let paragraph = document.querySelectorAll('.paragraph-contact')
+    let contact = document.querySelectorAll('.contact')
 
     document.body.classList.toggle('.modo')
 
@@ -152,7 +148,7 @@ function modo() {
 
         // === Área dos serviços === //
         if (conteudoCard) conteudoCard.forEach(c => c.style.background = '#1B3F64')
-        if (conteudoCard) conteudoCard.forEach(c => c.style.border = '2px solid #4F82A9')
+        if (conteudoCard) conteudoCard.forEach(c => c.style.border = '3px solid #4F82A9')
 
         if (titleCard) titleCard.forEach(c => c.style.color = '#F6FBFC')
 
@@ -161,11 +157,58 @@ function modo() {
         if (listCard) listCard.forEach(c => c.style.color = '#4f82a9')
 
         cardEmail.style.background = '#1b3f64'
-        cardEmail.style.border = '2px solid #4f82a9'
+        cardEmail.style.border = '3px solid #4f82a9'
 
         titleEmail.style.color = '#F6FBFC'
-        
+
         paragrafoEmail.style.color = '#4f82a9'
+
+        // === Projetos === //
+
+        if (CardProjeto) CardProjeto.forEach(c => c.style.backgroundColor = '#1B3F64')
+
+        if (CardTitle) CardTitle.forEach(c => c.style.color = '#f8fbfc')
+
+        if (tecnologias) tecnologias.forEach(c => c.style.background = '#2e547a');
+
+        if (tecnologias) tecnologias.forEach(c => c.style.color = '#4f82a9');
+
+        if (tecnologias) tecnologias.forEach(c => c.style.border = '3px solid #4f82a9');
+
+        if (tecnologias) tecnologias.forEach(c => c.style.transition = '1s')
+
+        if (dateProject) dateProject.forEach(c => c.style.color = "#4f82a9")
+        if (ClassProject) ClassProject.forEach(c => c.style.color = '#4f82a9')
+        if (conteudo) conteudo.forEach(c => c.style.color = '#4f82a9')
+
+        if (buttonCard) buttonCard.forEach(c => c.style.background = '#1B3F64')
+        if (buttonCard) buttonCard.forEach(c => c.style.color = '#ffff')
+        if (buttonCard) buttonCard.forEach(c => c.style.fill = '#ffff')
+        if (buttonCard) buttonCard.forEach(c => c.style.border = '2px solid #ffff')
+
+        buttonStudies.style.background = '#0c1d39'
+        buttonStudies.style.border = '3px solid #f4f8fb'
+        buttonStudies.style.color = '#f4f8fb'
+
+        buttonProfessional.style.background = '#0c1d39'
+        buttonProfessional.style.border = '3px solid #f4f8fb'
+        buttonProfessional.style.color = '#f4f8fb'
+
+        buttonProstudies.style.background = '#0c1d39'
+        buttonProstudies.style.border = '3px solid #f4f8fb'
+        buttonProstudies.style.color = '#f4f8fb'
+
+        // Contanto 
+
+        if (subTitle) subTitle.forEach(c => c.style.color = '#ffff')
+
+        if (titleContact) titleContact.forEach(c => c.style.color = '#ffff')
+
+        if (paragraph) paragraph.forEach(c => c.style.color = '#ffff')
+
+        if (contact) contact.forEach(c => c.style.color = '#ffff')
+        if (contact) contact.forEach(c => c.style.fill = '#ffff')
+
 
 
     } else {
@@ -180,7 +223,7 @@ function modo() {
         Logo.style.transition = '1s'
 
         if (navList) navList.forEach(c => c.style.color = '#0c1d39');
-        if (navList) navList.forEach(c => c.style.transition = '1s')   
+        if (navList) navList.forEach(c => c.style.transition = '1s')
 
         buttonMode.innerHTML = `  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M0 0h24v24H0z" fill="none" />
@@ -190,7 +233,7 @@ function modo() {
         buttonMode.style.color = '#0c1d39'
         buttonMode.style.background = '#ffff'
 
-        
+
         navlistResponsive.style.background = '#f6fafd'
         navlistResponsive.style.transition = '1s'
 
@@ -232,7 +275,7 @@ function modo() {
 
         // === Área dos serviços === //
         if (conteudoCard) conteudoCard.forEach(c => c.style.background = '#FFFF')
-        if (conteudoCard) conteudoCard.forEach(c => c.style.border = '2px solid #CED2Dd')
+        if (conteudoCard) conteudoCard.forEach(c => c.style.border = '3px solid #CED2Dd')
 
         if (titleCard) titleCard.forEach(c => c.style.color = '#0C1D39')
 
@@ -241,14 +284,57 @@ function modo() {
         if (listCard) listCard.forEach(c => c.style.color = '#0c1d39')
 
         cardEmail.style.background = '#FFFF'
-        cardEmail.style.border = '2px solid #CED2Dd'
+        cardEmail.style.border = '3px solid #CED2Dd'
 
         titleEmail.style.color = '#0C1D39'
-        
+
         paragrafoEmail.style.color = '#4f82a9'
 
+        // === Projetos === //
 
-      
+
+        if (CardProjeto) CardProjeto.forEach(c => c.style.backgroundColor = '#f4f8fb')
+
+        if (CardTitle) CardTitle.forEach(c => c.style.color = '#0c1d39')
+
+        if (tecnologias) tecnologias.forEach(c => c.style.background = '#f4f8fb')
+
+        if (tecnologias) tecnologias.forEach(c => c.style.color = '#0c1d39a9');
+
+        if (tecnologias) tecnologias.forEach(c => c.style.border = '3px solid #CED2D7');
+
+        if (dateProject) dateProject.forEach(c => c.style.color = "#0c1d39a9")
+        if (ClassProject) ClassProject.forEach(c => c.style.color = '#0c1d39a9')
+        if (conteudo) conteudo.forEach(c => c.style.color = '#0c1d39a9')
+
+        if (buttonCard) buttonCard.forEach(c => c.style.background = '#1B3F64')
+        if (buttonCard) buttonCard.forEach(c => c.style.color = '#0c1d39')
+        if (buttonCard) buttonCard.forEach(c => c.style.fill = '#0c1d39')
+        if (buttonCard) buttonCard.forEach(c => c.style.border = '2px solid #CED2Dd')
+
+        buttonStudies.style.background = '#f4f8fb'
+        buttonStudies.style.border = '3px solid #0c1d39a9'
+        buttonStudies.style.color = '#0c1d39a9'
+
+        buttonProfessional.style.background = '#f4f8fb'
+        buttonProfessional.style.border = '3px solid #CED2Dd'
+        buttonProfessional.style.color = '#0c1d39a9'
+
+        buttonProstudies.style.background = '#f4f8fb'
+        buttonProstudies.style.border = '3px solid #CED2Dd'
+        buttonProstudies.style.color = '#0c1d39a9'
+
+        // Contanto 
+
+         if (subTitle) subTitle.forEach(c => c.style.color = '#0c1d39a9')
+
+        if (titleContact) titleContact.forEach(c => c.style.color = '#0c1d39a9')
+
+        if (paragraph) paragraph.forEach(c => c.style.color = '#0c1d39a9')
+
+        if (contact) contact.forEach(c => c.style.color = '#0c1d39a9')
+        if (contact) contact.forEach(c => c.style.fill = '#0c1d39a9')
+
     }
 }
 
@@ -262,8 +348,8 @@ function AllProject() {
     if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "block")
 
     if (Studies) Studies.forEach(c => c.style.display = "block")
-        
-    if (Professional) Professional.forEach(c => c.style.display = "block")    
+
+    if (Professional) Professional.forEach(c => c.style.display = "block")
 }
 
 function ProjectStudies() {
@@ -274,11 +360,11 @@ function ProjectStudies() {
     if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "none")
 
     if (Studies) Studies.forEach(c => c.style.display = "block")
-        
-    if (Professional) Professional.forEach(c => c.style.display = "none")    
+
+    if (Professional) Professional.forEach(c => c.style.display = "none")
 }
 
-function ProjectProfessional () {
+function ProjectProfessional() {
     const Professionalstudies = document.querySelectorAll('.Professionalstudies')
     const Studies = document.querySelectorAll('.studies')
     const Professional = document.querySelectorAll('.Professional')
@@ -286,8 +372,8 @@ function ProjectProfessional () {
     if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "none")
 
     if (Studies) Studies.forEach(c => c.style.display = "none")
-        
-    if (Professional) Professional.forEach(c => c.style.display = "block")    
+
+    if (Professional) Professional.forEach(c => c.style.display = "block")
 }
 
 
@@ -299,6 +385,6 @@ function Professionalstudies() {
     if (Professionalstudies) Professionalstudies.forEach(c => c.style.display = "block")
 
     if (Studies) Studies.forEach(c => c.style.display = "none")
-        
-    if (Professional) Professional.forEach(c => c.style.display = "none")    
+
+    if (Professional) Professional.forEach(c => c.style.display = "none")
 }
