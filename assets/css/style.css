@@ -355,7 +355,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 133px 0;
-    gap: 25px;
+    gap: 100px;
 }
 
 .title-sobre {
@@ -366,7 +366,7 @@ body {
 .title-sobre p {
     font-family: var(--font-primary);
     color: var(--secundaryText);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: var(--regular);
 }
 
@@ -379,7 +379,7 @@ body {
 
 .divisor-sobre hr {
     background-color: var(--primaryBorder);
-    width: 100em;
+    width: 110em;
     border: none;
     padding: 2px;
 }
@@ -410,12 +410,23 @@ body {
 .paragrafo-sobre {
     color: var(--secundaryText);
     font-family: var(--font-secundary);
-    font-size: 20px;
+    font-size: 24px;
     padding: 30px 0;
 }
 
 .part1-conteudo-sobre {
     padding: 40px 0;
+}
+
+.button-sobre {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-sobre svg {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .button-sobre a {
@@ -425,8 +436,8 @@ body {
     font-family: var(--font-primary);
     font-weight: var(--SemiBold);
     border-radius: 14px;
-    font-size: 20px;
-    padding: 14px 23px;
+    font-size: 24px;
+    padding: 25px 23px;
 }
 
 .button-sobre a:hover {
@@ -436,10 +447,10 @@ body {
 }
 
 /* === Área dos serviços === */
+
 .servicos-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 50px;
 }
@@ -447,15 +458,14 @@ body {
 .servicos-title-container {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 133px 0;
-    gap: 25px;
+    gap: 100px;
 }
 
 .servicos-title p {
     font-family: var(--font-primary);
     color: var(--secundaryText);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: var(--regular);
 }
 
@@ -464,7 +474,6 @@ body {
     color: var(--primaryText);
     font-size: 48px;
     font-weight: bold;
-    ;
 }
 
 .divisor-servicos hr {
@@ -486,14 +495,21 @@ body {
     background-color: var(--secundaryBack);
     padding: 20px;
     width: 390px;
-    height: 450px;
-    border: 2px solid var(--secundaryBorder);
+    height: 530px;
+    border: 3px solid var(--secundaryBorder);
     border-radius: 31px;
 }
 
+.card-servico:hover {
+    border-color: var(--sixthBack) !important;
+    transition: 0.3s ease-in !important;
+}
+
 .icon-servico svg {
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 20px;
-    padding: 10px;
+    padding: 19px;
     background-color: var(--fifthBack);
     fill: var(--secundaryIcon);
 }
@@ -504,11 +520,14 @@ body {
 
 .titulo-card {
     padding: 5px 0;
+    font-size: 32px;
+    font-weight: var(--SemiBold);
     font-family: var(--font-primary);
 }
 
 .conteudo-card-servico p {
-    color: var(--primaryText);
+    color: var(--secundaryText);
+    font-weight: var(--SemiBold);
     font-family: var(--font-secundary);
     font-size: 20px;
     padding: 20px 0;
@@ -516,10 +535,22 @@ body {
 
 .list-tech {
     list-style: none;
-    color: var(--primaryText);
+    color: var(--secundaryText);
     font-size: 20px;
+    font-weight: var(--SemiBold);
     padding: 5px 0;
     font-family: var(--font-secundary);
+}
+
+.list-tech li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.list-tech svg {
+    width: 2em;
+    height: 2em;
 }
 
 .card-email-container {
@@ -529,13 +560,20 @@ body {
     gap: 50px;
     background-color: var(--secundaryBack);
     border-radius: 29px;
-    border: 2px solid var(--secundaryBorder);
+    border: 3px solid var(--secundaryBorder);
     padding: 50px;
+    width: 45vw;
+}
+
+.card-email-container:hover {
+    border-color: var(--sixthBack) !important;
+    transition: 0.3s ease-in !important;
 }
 
 .email-message {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .email-message h1 {
@@ -547,8 +585,9 @@ body {
 
 .email-message p {
     color: var(--secundaryText);
+    font-size: 20px;
+    font-weight: var(--SemiBold);
     font-family: var(--font-secundary);
-    gap: 20px;
 }
 
 .button-contato-email {
@@ -561,13 +600,30 @@ body {
     background-color: var(--fifthBack);
 }
 
+.button-contato-email:hover {
+    background-color: var(--fourthText);
+    transition: 0.3s ease-in;
+}
+
 .button-contato-email a {
+    display: flex;
     align-items: center;
+    gap: 15px;
     text-decoration: none;
     color: var(--fifthText);
     font-family: var(--font-primary);
     font-weight: var(--Bold);
+}
 
+.button-contato-email a:hover {
+    fill: var(--primaryText);
+    color: var(--primaryText);
+    transition: 1s ease-in;
+}
+
+.button-contato-email svg {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 /* === Área dos projetos ===  */
@@ -580,9 +636,8 @@ body {
 .projetos-title-container {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 133px 0;
-    gap: 25px;
+    gap: 100px;
 }
 
 .projetos-title {
@@ -593,7 +648,7 @@ body {
 .projetos-title p {
     font-family: var(--font-primary);
     color: var(--secundaryText);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: var(--regular);
 }
 
@@ -639,16 +694,16 @@ body {
 }
 
 #buttonTodos:hover {
-    background-color: var(--sixthBack);
-    color: var(--primaryText);
-    transition: 0.5s ease-in;
+    background-color: var(--sixthBack) !important;
+    color: var(--primaryText) !important;
+    transition: 0.5s ease-in !important;
 }
 
 #buttonEstudos {
     padding: 15px;
     background-color: var(--secundaryBack);
     color: var(--secundaryText);
-    border: 2px solid var(--primaryBorder);
+    border: 3px solid var(--primaryBorder);
     font-size: 20px;
     cursor: pointer;
     font-family: var(--font-primary);
@@ -657,15 +712,15 @@ body {
 }
 
 #buttonEstudos:hover {
-    background-color: var(--secundaryBorder);
-    transition: 0.5s ease-in;
+    background-color: var(--secundaryBorder) !important;
+    transition: 0.5s ease-in !important;
 }
 
 #buttonProfissional {
     padding: 15px;
     background-color: var(--secundaryBack);
     color: var(--secundaryText);
-    border: 2px solid var(--primaryBorder);
+    border: 3px solid var(--primaryBorder);
     font-size: 20px;
     cursor: pointer;
     font-family: var(--font-primary);
@@ -674,8 +729,8 @@ body {
 }
 
 #buttonProfissional:hover {
-    background-color: var(--secundaryBorder);
-    transition: 0.5s ease-in;
+    background-color: var(--secundaryBorder) !important;
+    transition: 0.5s ease-in !important;
 
 }
 
@@ -683,7 +738,7 @@ body {
     padding: 15px;
     background-color: var(--secundaryBack);
     color: var(--secundaryText);
-    border: 2px solid var(--primaryBorder);
+    border: 3px solid var(--primaryBorder);
     font-size: 20px;
     cursor: pointer;
     font-family: var(--font-primary);
@@ -692,8 +747,8 @@ body {
 }
 
 #buttonProfissionalEstudos:hover {
-    background-color: var(--secundaryBorder);
-    transition: 0.5s ease-in;
+    background-color: var(--secundaryBorder) !important;
+    transition: 0.5s ease-in !important;
 }
 
 .Projetos {
@@ -719,7 +774,7 @@ body {
 .data-projetos {
     color: var(--secundaryText);
     font-family: var(--font-primary);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .card-projetos h2 {
@@ -734,7 +789,7 @@ body {
     color: var(--secundaryText);
     font-family: var(--font-primary);
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .card-projetos img {
@@ -759,7 +814,7 @@ body {
 
 .tecnologias {
     padding: 15px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: var(--font-secundary);
     font-weight: var(--SemiBold);
     background-color: var(--primaryBack);
@@ -797,12 +852,27 @@ body {
     flex: 1 1 auto;
 }
 
+.button-page:hover {
+  background-color: var(--secundaryBack);
+  transition: 0.3s ease-in;
+}
+
 .button-deploy {
     padding: 20px;
 }
 
+.button-deploy:hover {
+    background-color: var(--secundaryBack);
+    transition: 0.3s ease-in;
+}
+
 .button-hub {
     padding: 20px;
+}
+
+.button-hub:hover {
+    background-color: var(--secundaryBack);
+    transition: 0.3s ease-in;
 }
 
 /* === Área dos contato ===  */
@@ -1139,21 +1209,15 @@ body {
         padding: 40px 0;
     }
 
+    .button-sobre svg {
+    width: 1em;
+    height: 1em;
+}
+
+
     .button-sobre a {
-        background-color: var(--fifthBack);
-        color: var(--fifthText);
-        text-decoration: none;
-        font-family: var(--font-primary);
-        font-weight: var(--SemiBold);
-        border-radius: 14px;
         font-size: 16px;
         padding: 14px 23px;
-    }
-
-    .button-sobre a:hover {
-        background-color: var(--sixthBack);
-        color: var(--primaryText);
-        transition: 0.5s ease-in;
     }
 
 
@@ -1265,6 +1329,7 @@ body {
 
     .card-email-container {
         flex-direction: column;
+        width: 60vw;
         padding: 25px;
     }
 
@@ -1653,6 +1718,7 @@ body {
 
     .card-email-container {
         flex-direction: column;
+        width: 85vw;
         padding: 20px;
         margin: 10px;
     }
