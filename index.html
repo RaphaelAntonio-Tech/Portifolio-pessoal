@@ -36,10 +36,10 @@
 
             <ul class="nav-list">
                 <li><a class="item-list" href="index.html">Início</a></li>
-                <li><a class="item-list" href="../pages/sobre mim/index.html">Sobre mim</a></li>
-                <li><a class="item-list" href="../pages/Projetos/index.html">Projetos</a></li>
-                <li><a class="item-list" href="../pages/Serviços/index.html">Serviços</a></li>
-                <li><a class="item-list" href="../pages/Entre em contato/index.html">Entre em contato</a></li>
+                <li><a class="item-list" href="#Aboutme">Sobre mim</a></li>
+                <li><a class="item-list" href="#ProjectPage">Projetos</a></li>
+                <li><a class="item-list" href="#services">Serviços</a></li>
+                <li><a class="item-list" href="#Contact">Entre em contato</a></li>
                 <button class="modo" onclick="modo()">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M0 0h24v24H0z" fill="none" />
@@ -142,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="conteudo-sobre">
+            <div class="conteudo-sobre" id="Aboutme">
                 <div class="sobre-mim">
                     <div class="part1-conteudo-sobre">
                         <h1>Estudante de Análise e Desenvolvimento de Sistemas (ADS) e Desenvolvedor Front-End em
@@ -192,7 +192,7 @@
                 </div>
             </div>
 
-            <div class="conteudo-sobre-responsivo">
+            <div class="conteudo-sobre-responsivo" id="Aboutme">
                 <div class="sobre-mim-responsivo">
                     <div class="part1-conteudo-sobre-responsivo">
                         <h1>Estudante de Análise e Desenvolvimento de Sistemas (ADS) e Desenvolvedor Front-End em
@@ -231,7 +231,7 @@
         </section>
 
         <!-- === Área dos serviços === -->
-        <section class="servicos-container">
+        <section class="servicos-container" id="services">
             <div class="servicos-title-container">
                 <div class="servicos-title">
                     <p class="p-servicos p-sobre">O QUE EU FAÇO?</p>
@@ -394,7 +394,7 @@
             </div>
         </section>
 
-        <section class="container-projetos">
+        <section class="container-projetos" id="ProjectPage" >
             <div class="projetos-title-container">
                 <div class="projetos-title">
                     <p class="p-sobre">PORTFÓLIO</p>
@@ -413,13 +413,13 @@
                     <button id="buttonTodos" onclick="AllProject()">Todos</button>
                     <button id="buttonEstudos" onclick="ProjectStudies()">Estudos</button>
                     <button id="buttonProfissional" onclick="ProjectProfessional()">Profissional</button>
-                    <button id="buttonProfissionalEstudos" onclick="Professionalstudies()">Profissional /
-                        Estudos</button>
+                   <!-- <button id="buttonProfissionalEstudos" onclick="Professionalstudies()">Profissional /
+                        Estudos</button> -->
                 </div>
             </div>
 
 
-            <article class="Projetos">
+            <article class="Projetos" >
                <!--  <div class="card-projetos Professionalstudies studies Professional">
                     <img src="assets/image/Curiosidades capa.png" alt="Curiosidade de tecnologia"
                         title="Curiosidade de Tecnologia">
@@ -976,7 +976,7 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer" id="Contact">
         <div class="contact-copyright">
             <div class="copyright">
                 <p class="contact"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">

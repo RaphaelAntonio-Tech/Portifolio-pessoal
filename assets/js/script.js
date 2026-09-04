@@ -194,17 +194,14 @@ function modo() {
         buttonProfessional.style.border = '3px solid #f4f8fb'
         buttonProfessional.style.color = '#f4f8fb'
 
-        buttonProstudies.style.background = '#0c1d39'
-        buttonProstudies.style.border = '3px solid #f4f8fb'
-        buttonProstudies.style.color = '#f4f8fb'
-
+        
         // Contanto 
 
         if (subTitle) subTitle.forEach(c => c.style.color = '#ffff')
 
         if (titleContact) titleContact.forEach(c => c.style.color = '#ffff')
 
-        if (paragraph) paragraph.forEach(c => c.style.color = '#ffff')
+        if (paragraph) paragraph.forEach(c => c.style.color = '#979CA6')
 
         if (contact) contact.forEach(c => c.style.color = '#ffff')
         if (contact) contact.forEach(c => c.style.fill = '#ffff')
@@ -320,9 +317,6 @@ function modo() {
         buttonProfessional.style.border = '3px solid #CED2Dd'
         buttonProfessional.style.color = '#0c1d39a9'
 
-        buttonProstudies.style.background = '#f4f8fb'
-        buttonProstudies.style.border = '3px solid #CED2Dd'
-        buttonProstudies.style.color = '#0c1d39a9'
 
         // Contanto 
 

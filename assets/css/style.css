@@ -843,8 +843,8 @@ body {
 }
 
 .button-page:hover {
-  background-color: var(--secundaryBack);
-  transition: 0.3s ease-in;
+    background-color: var(--secundaryBack);
+    transition: 0.3s ease-in;
 }
 
 .button-deploy {
@@ -1200,9 +1200,9 @@ body {
     }
 
     .button-sobre svg {
-    width: 1em;
-    height: 1em;
-}
+        width: 1em;
+        height: 1em;
+    }
 
 
     .button-sobre a {
@@ -1487,7 +1487,7 @@ body {
     .conteudo-apresentacao {
         flex-direction: column;
         height: 190vh;
-        padding: 60px 30px;
+        padding: 60px 0px;
     }
 
     .apresetacao h1 {
@@ -1551,9 +1551,9 @@ body {
     }
 
     .button-sobre svg {
-    width: 1em;
-    height: 1em;
-}
+        width: 1em;
+        height: 1em;
+    }
 
 
     .button-sobre a {
@@ -1698,8 +1698,8 @@ body {
     }
 
     .servicos-title p {
-    font-size: 16px;
-}
+        font-size: 16px;
+    }
 
     .servicos-title h1 {
         font-size: 32px;
@@ -1708,9 +1708,11 @@ body {
     .divisor-servicos hr {
         width: 20em;
     }
-.servicos-container {
-    justify-content: center;
-}
+
+    .servicos-container {
+        justify-content: center;
+    }
+
     .card-servico {
         width: 300px;
         height: 550px;
@@ -1718,13 +1720,13 @@ body {
     }
 
     .icon-servico svg {
-    width: 2em;
-    height: 2em;
+        width: 2em;
+        height: 2em;
     }
 
-  .titulo-card {
-    font-size: 25px;
-  }
+    .titulo-card {
+        font-size: 25px;
+    }
 
     .conteudo-card-servico p {
         font-size: 16px;
@@ -1740,19 +1742,19 @@ body {
         padding: 15px;
     }
 
-.email-message h1 {
-    color: var(--primaryText);
-    padding: 10px 0;
-    font-size: 25px;
-}
+    .email-message h1 {
+        color: var(--primaryText);
+        padding: 10px 0;
+        font-size: 25px;
+    }
 
     .email-message p {
         font-size: 16px;
     }
 
-.button-contato-email {
-    padding: 15px;
-}
+    .button-contato-email {
+        padding: 15px;
+    }
 
     .button-contato-email a {
         font-size: 16px;
@@ -1775,9 +1777,9 @@ body {
         gap: 10px;
     }
 
-.projetos-title p {
-    font-size: 16px;
-}
+    .projetos-title p {
+        font-size: 16px;
+    }
 
     .projetos-title h1 {
         font-size: 32px;
@@ -1786,26 +1788,28 @@ body {
     .divisor-projetos hr {
         width: 20em;
     }
-.opcoes-pesquisa {
-    display: flex;
-    flex-direction: column;
-}
 
-#buttonTodos {
-    font-size: 16px;
-}
-#buttonEstudos {
-    font-size: 16px;
-}
+    .opcoes-pesquisa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #buttonTodos {
+        font-size: 16px;
+    }
+
+    #buttonEstudos {
+        font-size: 16px;
+    }
 
 
-#buttonProfissional {
-    font-size: 16px;
-}
+    #buttonProfissional {
+        font-size: 16px;
+    }
 
-#buttonProfissionalEstudos {
-    font-size: 16px;
-}
+    #buttonProfissionalEstudos {
+        font-size: 16px;
+    }
 
     .Projetos {
         flex-direction: column;
@@ -1860,8 +1864,8 @@ body {
     }
 
     .buttons-projeto {
-    gap: 5px;
-}
+        gap: 5px;
+    }
 
 
     .skill img {
