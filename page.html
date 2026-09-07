@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <title>Raphael Antônio - Desenvolvedor Front-End</title>
+</head>
+<body class="body">
+
+   <!-- ==========================================
+     HEADER (CABEÇARIO)
+     ================================================ -->
+
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em"
+                    viewBox="0 0 1024 1024">
+                    <path d="M0 0h1024v1024H0z" fill="none" />
+                    <path fill="#4A7FA7"
+                        d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281l360-281.1c3.8-3 6.1-7.7 6.1-12.6" />
+                </svg>
+                Raphael Antônio<svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="none" stroke="#4A7FA7" stroke-linecap="square" stroke-width="2" d="M17 3.34L7 20.66" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" viewBox="0 0 1024 1024">
+                    <path d="M0 0h1024v1024H0z" fill="none" />
+                    <path fill="#4A7FA7"
+                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1l-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4" />
+                </svg>
+
+            </h1>
+
+            <ul class="nav-list">
+                <li><a class="item-list" href="index.html">Início</a></li>
+                <li><a class="item-list" href="../pages/sobre mim/index.html">Sobre mim</a></li>
+                <li><a class="item-list" href="../pages/Projetos/index.html">Projetos</a></li>
+                <li><a class="item-list" href="../pages/Serviços/index.html">Serviços</a></li>
+                <li><a class="item-list" href="../pages/Entre em contato/index.html">Entre em contato</a></li>
+                <button class="modo" onclick="modo()">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12.741 20.917a9.4 9.4 0 0 1-1.395-.105a9.141 9.141 0 0 1-1.465-17.7a1.18 1.18 0 0 1 1.21.281a1.27 1.27 0 0 1 .325 1.293a8.1 8.1 0 0 0-.353 2.68a8.27 8.27 0 0 0 4.366 6.857a7.6 7.6 0 0 0 3.711.993a1.242 1.242 0 0 1 .994 1.963a9.15 9.15 0 0 1-7.393 3.738M10.261 4.05a.2.2 0 0 0-.065.011a8.137 8.137 0 1 0 9.131 12.526a.22.22 0 0 0 .013-.235a.23.23 0 0 0-.206-.136a8.6 8.6 0 0 1-4.188-1.116a9.27 9.27 0 0 1-4.883-7.7a9.1 9.1 0 0 1 .4-3.008a.29.29 0 0 0-.069-.285a.18.18 0 0 0-.133-.057" />
+                    </svg>
+
+                </button>
+                <button class="hamburguer-menu" onclick="openMenu()">
+                <svg id="burguer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path  d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
+                </svg>
+                 </button>
+            </ul>
+        </nav>
+
+      
+
+        <!-- ================== Header responsivo ========================= -->
+
+        <nav class="nav-responsive">
+            <ul class="navlist-responsive">
+                 <div class="closeHamburguer" onclick="closeMenu()">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+                </svg>
+                </div>
+                <li><a class="item-list" href="index.html">Início</a></li>
+                <li><a class="item-list" href="../pages/sobre mim/index.html">Sobre mim</a></li>
+                <li><a class="item-list" href="../pages/Projetos/index.html">Projetos</a></li>
+                <li><a class="item-list" href="../pages/Serviços/index.html">Serviços</a></li>
+                <li><a class="item-list" href="../pages/Entre em contato/index.html">Entre em contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="background"></div>
+
+   <script src="assets/js/page.js"></script>
+</body>
+</html>

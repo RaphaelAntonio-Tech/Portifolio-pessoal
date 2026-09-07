@@ -1,0 +1,427 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /* =============== LIGHT MODE ====================== */
+
+    /* ===========================================
+      CORES DE BACKGROUND
+     ===========================================
+  */
+
+    --primaryBack: #F6FAFD;
+    --secundaryBack: #FFFF;
+    --thirdBack: #0C1D39;
+    --frourthBack: #1A3D63;
+    --fifthBack: #4A7FA7;
+    --sixthBack: #B3CFE5;
+    --sevenback: #818B9B;
+
+
+    /* ===========================================
+      CORES DE TEXTO
+     ===========================================
+  */
+
+    --primaryText: #0C1D39;
+    --secundaryText: #0c1d39a9;
+    --thirdText: #4A7FA7;
+    --fourthText: #B3CFE5;
+    --fifthText: #FFFF;
+
+    /* ===========================================
+      CORES DE ICONE
+     ===========================================
+  */
+
+    --primaryIcon: #FFFF;
+    --secundaryIcon: #F6FAFD;
+    --thirdIcon: #4A7FA7;
+
+    /* ===========================================
+      CORES DE BORDA
+     ===========================================
+  */
+
+    --primaryBorder: #b8bbbe;
+    --secundaryBorder: #CED2D7;
+    --thirdBorder: #818B9B;
+
+
+    /* ===========================================
+     TIPOGRAFIA
+     ===========================================
+  */
+
+    --font-primary: "Work Sans", sans-serif;
+    --font-secundary: "Raleway", sans-serif;
+
+    --regular: 400;
+    --medium: 500;
+    --SemiBold: 600;
+    --Bold: bold;
+
+}
+
+* {
+   
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--primaryBack);
+}
+
+/* ==============================================
+ HEADER (CABEÇARIO)
+================================================= */
+.header {
+    background-color: var(--secundaryBack);
+    color: var(--primaryText);
+    padding-inline: 16px;
+    border-bottom: 2px solid var(--primaryBorder);
+}
+
+.nav {
+    display: flex;
+    font-family: var(--font-secundary);
+    justify-content: space-around;
+    align-items: center;
+    gap: 6rem;
+    color: var(--primaryText);
+    padding-block: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 32px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-list a {
+    display: none;
+    padding-block: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--primaryText);
+    font-weight: var(--SemiBold);
+    padding: 5px;
+}
+
+.nav-list a:hover {
+    transition: 0.5s !important;
+    color: var(--fourthText) !important;
+}
+
+
+.modo {
+    border: 1px solid var(--primaryBorder);
+    background-color: var(--secundaryBack);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#sun,
+#moon {
+    width: 2.2rem;
+    fill: var(--primaryText);
+}
+
+#moon:hover {
+    transition: 0.5s;
+    fill: var(--secundaryIcon);
+}
+
+.modo:hover {
+    background-color: var(--sixthBack);
+    transition: 0.5s;
+
+}
+
+/* === HEADER RESPONSIVO === */
+
+.nav-responsive {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.navlist-responsive {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    inset: 0;
+    top: 0;
+    max-width: 600px;
+    background-color: var(--secundaryBack);
+    padding: 20px;
+    max-height: 100%;
+    list-style: none;
+    gap: 50px;
+    transition: ease-in 1s;
+    z-index: 10;
+}
+
+.navlist-responsive a {
+    display: flex;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: var(--primaryText);
+    font-weight: var(--SemiBold);
+    padding: 20px;
+}
+
+.modo-responsive {
+    display: flex;
+}
+
+.hamburguer-menu {
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--primaryBorder);
+    border-radius: 15px;
+    background-color: var(--secundaryBack);
+    fill: var(--secundaryText);
+}
+
+#burguer {
+    width: 2.2rem;
+}
+
+.closeHamburguer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a3d6398;
+    z-index: 2;
+    transition: ease-in 1s;
+}
+
+/* ==== CELULARES === */
+@media screen and (max-width: 768px) { 
+.header {
+    background-color: var(--secundaryBack);
+    color: var(--primaryText);
+    padding-inline: 16px;
+    border-bottom: 2px solid var(--primaryBorder);
+}
+
+.nav {
+    display: flex;
+    font-family: var(--font-secundary);
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    color: var(--primaryText);
+    padding-block: 15px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 12px;
+}
+
+.nav-list a {
+    display: none;
+}
+
+.nav-list a:hover {
+    transition: 0.5s !important;
+    color: var(--fourthText) !important;
+}
+
+
+.modo {
+    display: flex;
+    border: 1px solid var(--primaryBorder);
+    background-color: var(--secundaryBack);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#sun {
+  width: 2rem;
+}
+
+#sun:hover {
+   transition: 0.5s !important;
+   fill: var(--primaryIcon) !important;
+}
+
+#moon {
+    width: 2rem;
+}
+
+#moon:hover {
+    transition: 0.5s;
+    fill: var(--secundaryIcon) !important;
+}
+
+.modo:hover {
+    background-color: var(--sixthBack);
+    transition: 0.5s;
+
+}
+
+/* === HEADER RESPONSIVO === */
+
+.nav-responsive {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.navlist-responsive {
+    max-width: 600px;
+    max-height: 100%;
+    list-style: none;
+   
+}
+
+.navlist-responsive a {
+    display: flex;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: var(--thirdText);
+    font-weight: var(--SemiBold);
+    padding: 20px;
+}
+
+.modo-responsive {
+    display: flex;
+}
+
+.hamburguer-menu {
+    fill: var(--secundaryText);
+}
+
+#burguer {
+    width: 2rem;
+}
+
+.closeHamburguer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.background {
+    display: none;
+}
+    
+}
+
+/* === DESKTOP ===*/
+@media screen and  (min-width: 1024px) {
+
+
+.nav {
+    display: flex;
+    font-family: var(--font-secundary);
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primaryText);
+    padding-block: 15px;
+}
+
+.logo {
+    font-size: 48px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-list a {
+    display: flex;
+    padding-block: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--primaryText);
+    font-weight: var(--SemiBold);
+    padding: 5px;
+}
+
+.nav-list a:hover {
+    transition: 0.5s !important;
+    color: var(--fourthText) !important;
+}
+
+
+.modo {
+    cursor: pointer;
+}
+
+#sun {
+  width: 2.2rem;
+}
+
+
+#moon {
+    width: 2.2rem;
+}
+
+#moon:hover {
+    transition: 0.5s;
+    fill: var(--secundaryIcon);
+}
+
+.modo:hover {
+    background-color: var(--sixthBack) !important;
+    transition: 0.5s;
+
+}
+
+/* === HEADER RESPONSIVO === */
+
+.nav-responsive,
+.navlist-responsive,
+.hamburguer-menu {
+    display: none;
+}
+
+.background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a3d6398;
+    z-index: 2;
+    transition: ease-in 1s;
+}
+  
+}
